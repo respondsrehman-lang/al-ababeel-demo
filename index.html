@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Ababeel Afghan Restaurant Dubai — Charcoal Fire, Family Recipes | Est. August 2026</title>
+<meta name="description" content="Al Ababeel Afghan Restaurant — Saih Shuaib 2, Dubai. Charcoal-grilled Afghan kababs, Shinwari karahi and hand-raised Kabuli pulao. Newly opened August 2026. Call +971 55 866 4409.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:title" content="Al Ababeel Afghan Restaurant — Dubai">
+<meta property="og:type" content="website">
+<meta property="og:description" content="The Afghan table lives here. Charcoal fire, family recipes, Saih Shuaib 2, Dubai. Established August 2026.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&auto=format&fit=crop&q=75">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Jost:wght@400;500;600;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Al Ababeel Afghan Restaurant","servesCuisine":["Afghan"],"telephone":"+971558664409","address":{"@type":"PostalAddress","streetAddress":"V2GV+4X8, Saih Shuaib 2","addressLocality":"Dubai","addressCountry":"AE"},"priceRange":"AED"}
+</script>
+<style>
+:root{
+  --bg:#0b0c0c;
+  --bg-2:#111312;
+  --ink:#f1ead9;
+  --ink-soft:#b9b3a2;
+  --ink-faint:#847e6d;
+  --gold:#d8b264;
+  --gold-bright:#ecd9a8;
+  --gold-deep:#a9832f;
+  --gold-soft:rgba(216,178,100,.13);
+  --green:#1f7a4d;
+  --green-deep:#123b2b;
+  --red:#a82731;
+  --red-deep:#5c151d;
+  --glass:rgba(22,24,23,.55);
+  --glass-2:rgba(26,28,27,.72);
+  --line:rgba(233,213,163,.15);
+  --line-strong:rgba(233,213,163,.3);
+  --radius:20px;
+  --shadow:0 30px 60px -30px rgba(0,0,0,.75);
+  --disp:"Cinzel",Georgia,serif;
+  --body:"Jost",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html.loading{overflow:hidden}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+}
+body{
+  font-family:var(--body);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* ── the gradient field: green · charcoal · red ── */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+    radial-gradient(1050px 640px at -6% -10%, rgba(31,122,77,.22), transparent 62%),
+    radial-gradient(920px 640px at 106% 8%, rgba(168,39,49,.18), transparent 62%),
+    radial-gradient(1200px 760px at 50% 120%, rgba(31,122,77,.13), transparent 64%),
+    linear-gradient(135deg,#0e1310 0%,#0b0c0c 40%,#0b0c0c 60%,#110a0c 100%);
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+::selection{background:var(--gold);color:#100d06}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+textarea,input{font:inherit}
+
+/* ============ SPLASH ============ */
+#splash{
+  position:fixed;
+  inset:0;
+  z-index:200;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(820px 520px at 50% 36%, rgba(216,178,100,.07), transparent 62%),
+    radial-gradient(760px 560px at 14% 0%, rgba(31,122,77,.20), transparent 64%),
+    radial-gradient(760px 560px at 88% 4%, rgba(168,39,49,.20), transparent 64%),
+    linear-gradient(180deg,#0a0b0b 0%,#0d0e0d 46%,#090a0a 100%);
+  transition:opacity .65s ease;
+}
+#splash.is-out{opacity:0;pointer-events:none}
+
+/* floating half-flags from the two top corners */
+.sp-flag{
+  position:absolute;
+  top:-42px;
+  width:min(44vw,470px);
+  aspect-ratio:3/2;
+  opacity:0;
+  transition:transform 1.25s cubic-bezier(.22,.9,.3,1), opacity .9s ease;
+  will-change:transform,opacity;
+}
+.sp-flag--l{left:max(-19vw,-230px);transform:translateY(-34%) rotate(-7deg);transform-origin:center right}
+.sp-flag--r{right:max(-19vw,-230px);transform:translateY(-34%) rotate(7deg) scaleX(-1);transform-origin:center left}
+.is-go .sp-flag--l{transform:translateY(-4%) rotate(-4deg);opacity:1;transition-delay:.7s}
+.is-go .sp-flag--r{transform:translateY(-4%) rotate(4deg);opacity:1;transition-delay:.7s}
+.sp-flag .cloth{
+  width:100%;
+  height:100%;
+  border-radius:4px;
+  box-shadow:0 26px 60px -18px rgba(0,0,0,.72), 0 0 0 1px rgba(233,213,163,.08);
+  transform-style:preserve-3d;
+  animation:clothWave 2.9s ease-in-out infinite alternate;
+  overflow:hidden;
+}
+.sp-flag--r .cloth{animation-delay:-1.45s}
+@keyframes clothWave{
+  0%{transform:perspective(900px) rotateY(7deg) skewY(2.1deg) rotateZ(-.7deg)}
+  100%{transform:perspective(900px) rotateY(-7deg) skewY(-2.1deg) rotateZ(.7deg)}
+}
+.cloth svg{width:100%;height:100%;display:block;filter:saturate(1.05)}
+.cloth::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(105deg,transparent 32%,rgba(255,255,255,.14) 46%,rgba(255,255,255,.02) 56%,transparent 68%);
+  animation:clothSheen 3.6s ease-in-out infinite;
+}
+.sp-flag--r .cloth::after{animation-delay:-1.8s}
+@keyframes clothSheen{
+  0%,18%{transform:translateX(-40%)}
+  60%,100%{transform:translateX(40%)}
+}
+@media (max-width:760px){
+  .sp-flag{width:56vw;top:-30px;opacity:.9}
+}
+
+/* crest + wordmark */
+.sp-center{text-align:center;padding:0 6vw;max-width:900px;position:relative;z-index:2}
+.sp-crest{
+  width:min(126px,26vw);
+  margin:0 auto 20px;
+  transform:rotateX(78deg) translateY(46px) scale(.8);
+  opacity:0;
+  transition:transform 1.15s cubic-bezier(.19,.9,.26,1), opacity .8s ease, filter 1.4s ease;
+  filter:drop-shadow(0 0 0 rgba(216,178,100,0));
+}
+.is-go .sp-crest{
+  transform:none;
+  opacity:1;
+  animation:crestGlow 2.6s ease-in-out 1.25s infinite alternate;
+}
+@keyframes crestGlow{
+  from{filter:drop-shadow(0 0 10px rgba(216,178,100,.12))}
+  to{filter:drop-shadow(0 0 30px rgba(216,178,100,.38))}
+}
+.sp-word{
+  font-family:var(--disp);
+  font-weight:700;
+  font-size:clamp(2.5rem,7.6vw,4.7rem);
+  letter-spacing:.14em;
+  color:var(--gold-bright);
+  line-height:1.1;
+  white-space:nowrap;
+}
+.sp-word span{
+  display:inline-block;
+  opacity:0;
+  transform:translateY(.6em);
+  filter:blur(7px);
+  transition:opacity .7s ease, transform .7s cubic-bezier(.2,.85,.25,1), filter .7s ease;
+  transition-delay:calc(.95s + var(--i)*.075s);
+}
+.is-go .sp-word span{opacity:1;transform:none;filter:blur(0)}
+.sp-dari{
+  font-family:"Amiri",serif;
+  font-size:clamp(1.15rem,3.4vw,1.65rem);
+  color:rgba(233,213,163,.72);
+  margin-top:8px;
+  opacity:0;
+  transform:translateY(12px);
+  transition:opacity .8s ease 1.75s, transform .8s ease 1.75s;
+}
+.is-go .sp-dari{opacity:1;transform:none}
+.sp-sub{
+  margin-top:14px;
+  font-size:clamp(.66rem,1.9vw,.82rem);
+  font-weight:500;
+  letter-spacing:.42em;
+  text-indent:.42em;
+  color:var(--ink-faint);
+  opacity:0;
+  transition:opacity .8s ease 2s;
+}
+.is-go .sp-sub{opacity:1}
+.sp-ribbon{
+  position:relative;
+  width:min(300px,58vw);
+  height:3px;
+  margin:26px auto 0;
+  border-radius:99px;
+  overflow:hidden;
+  opacity:.85;
+}
+.sp-ribbon i{
+  position:absolute;
+  inset:0;
+  border-radius:99px;
+  background:linear-gradient(90deg,#141414 0%,#8c1d27 38%,#d8b264 52%,#d8b264 56%,#135233 88%);
+  transform:scaleX(0);
+  transform-origin:center;
+  transition:transform 1.05s cubic-bezier(.22,.9,.3,1) 2.15s;
+}
+.is-go .sp-ribbon i{transform:scaleX(1)}
+.sp-est{
+  margin-top:14px;
+  font-size:.62rem;
+  letter-spacing:.34em;
+  text-indent:.34em;
+  color:rgba(216,178,100,.55);
+  opacity:0;
+  transition:opacity .8s ease 2.5s;
+}
+.is-go .sp-est{opacity:1}
+#splash.is-out .sp-center{transform:translateY(-26px) scale(.965);transition:transform .65s ease}
+.sp-center{transition:transform .65s ease}
+@media (prefers-reduced-motion:reduce){
+  .sp-flag .cloth,.cloth::after,.sp-crest{animation:none!important}
+}
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:100;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:16px clamp(16px,4vw,42px);
+  background:transparent;
+  transition:background .35s ease, box-shadow .35s ease, padding .35s ease;
+}
+.nav.is-solid{
+  background:rgba(11,12,12,.82);
+  -webkit-backdrop-filter:blur(14px) saturate(1.3);
+  backdrop-filter:blur(14px) saturate(1.3);
+  box-shadow:0 1px 0 var(--line), 0 18px 42px -22px rgba(0,0,0,.7);
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.nav-logo{display:flex;align-items:center;gap:12px;min-width:0}
+.nav-logo svg{height:44px;width:auto;flex:none}
+.nav-logo .nname{
+  font-family:var(--disp);
+  font-size:.98rem;
+  letter-spacing:.2em;
+  color:var(--gold-bright);
+  white-space:nowrap;
+}
+.nav-logo .nsub{display:block;font-family:var(--body);font-size:.56rem;letter-spacing:.4em;color:var(--ink-faint);margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)}
+.nav-links a{
+  font-size:.82rem;
+  font-weight:500;
+  letter-spacing:.14em;
+  color:var(--ink-soft);
+  position:relative;
+  padding:6px 2px;
+  transition:color .3s ease;
+}
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;right:100%;bottom:0;
+  height:2px;
+  border-radius:99px;
+  background:linear-gradient(90deg,#135233,#8c1d27,var(--gold));
+  transition:right .35s ease;
+}
+.nav-links a:hover,.nav-links a.on{color:var(--gold-bright)}
+.nav-links a:hover::after,.nav-links a.on::after{right:0}
+.nav-call{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  font-size:.78rem;
+  font-weight:600;
+  letter-spacing:.08em;
+  color:var(--gold-bright);
+  border:1px solid var(--line-strong);
+  border-radius:99px;
+  padding:9px 18px;
+  transition:background .3s ease, border-color .3s ease, transform .3s ease;
+  white-space:nowrap;
+}
+.nav-call:hover{background:var(--gold-soft);border-color:var(--gold);transform:translateY(-1px)}
+.nav-burger{display:none;flex-direction:column;gap:5px;padding:10px}
+.nav-burger i{display:block;width:22px;height:2px;background:var(--gold-bright);border-radius:2px;transition:transform .3s ease,opacity .3s ease}
+@media (max-width:900px){
+  .nav-links,.nav-call{display:none}
+  .nav-burger{display:flex}
+  .nav-logo svg{height:38px}
+}
+.nav-panel{
+  position:fixed;
+  inset:0;
+  z-index:99;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  background:rgba(9,10,10,.94);
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .35s ease;
+}
+.nav-panel.open{opacity:1;pointer-events:auto}
+.nav-panel nav{display:grid;gap:26px}
+.nav-panel a{font-family:var(--disp);font-size:1.5rem;letter-spacing:.14em;color:var(--ink-soft);padding:4px 10px}
+.nav-panel a:hover{color:var(--gold-bright)}
+.nav-panel .nptel{font-family:var(--body)!important;font-size:1rem!important;color:var(--gold)!important;letter-spacing:.1em!important}
+
+/* ============ SHARED ============ */
+.wrap{width:min(1160px,92vw);margin:0 auto}
+.tri-line{
+  height:3px;
+  width:min(1160px,92vw);
+  margin:0 auto;
+  border-radius:99px;
+  background:linear-gradient(90deg,rgba(20,20,20,.9) 0%,rgba(140,29,39,.9) 34%,rgba(216,178,100,.95) 52%,rgba(216,178,100,.45) 60%,rgba(19,82,51,.9) 90%);
+  box-shadow:0 6px 26px -6px rgba(216,178,100,.25);
+}
+.kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  font-size:.7rem;
+  font-weight:600;
+  letter-spacing:.38em;
+  text-indent:.38em;
+  color:var(--gold);
+  text-transform:uppercase;
+}
+.kicker::before,.kicker::after{content:"";width:30px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));opacity:.7}
+.kicker::after{background:linear-gradient(90deg,var(--gold),transparent)}
+h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-height:1.14}
+.section{padding:clamp(72px,10vw,128px) 0}
+.sec-head{max-width:660px;margin-bottom:clamp(38px,6vw,62px)}
+.sec-head h2{font-size:clamp(1.9rem,4.4vw,3.1rem);margin:16px 0 14px}
+.sec-head p{color:var(--ink-soft);font-size:1.02rem}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.25,1)}
+.reveal.in{opacity:1;transform:none}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+  font-size:.9rem;
+  letter-spacing:.1em;
+  border-radius:99px;
+  padding:14px 28px;
+  transition:transform .3s ease, background .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.btn-gold{
+  color:#120e04;
+  background:linear-gradient(135deg,#ecd9a8,#d8b264 55%,#a9832f);
+  box-shadow:0 16px 34px -14px rgba(216,178,100,.5);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 22px 44px -16px rgba(216,178,100,.6)}
+.btn-ghost{color:var(--gold-bright);border:1px solid var(--line-strong)}
+.btn-ghost:hover{background:var(--gold-soft);border-color:var(--gold);transform:translateY(-2px)}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  padding:150px 0 110px;
+  overflow:hidden;
+}
+.hero-mark{
+  position:absolute;
+  top:42%;
+  left:50%;
+  translate:-50% -50%;
+  width:min(700px,92vw);
+  opacity:.042;
+  z-index:-1;
+  pointer-events:none;
+}
+.swallow{position:absolute;opacity:.3;z-index:-1;pointer-events:none}
+.swallow svg{width:100%}
+.sw-a{width:54px;top:24%;left:-60px;animation:glide 34s linear infinite}
+.sw-b{width:38px;top:57%;left:-160px;animation:glide 46s linear infinite;animation-delay:-18s;opacity:.2}
+@keyframes glide{
+  0%{transform:translate(0,0) rotate(-4deg)}
+  22%{transform:translate(31vw,-8vh) rotate(3deg)}
+  46%{transform:translate(56vw,3vh) rotate(-3deg)}
+  74%{transform:translate(84vw,-5vh) rotate(4deg)}
+  100%{transform:translate(118vw,0) rotate(-4deg)}
+}
+@media (prefers-reduced-motion:reduce){.swallow{display:none}}
+.hero-wrap{display:grid;gap:26px;justify-items:start;max-width:760px}
+.hero .kicker{margin-bottom:8px}
+.hero h1{font-size:clamp(2.5rem,6.6vw,4.7rem);letter-spacing:.02em}
+.hero h1 em{font-style:normal;color:var(--gold);display:block;font-size:.52em;letter-spacing:.3em;font-weight:500;margin-top:10px}
+.hero .lead{color:var(--ink-soft);font-size:clamp(1rem,2vw,1.16rem);max-width:560px}
+.hero .dari{font-family:"Amiri",serif;font-size:1.5rem;color:rgba(233,213,163,.5)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:10px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.16em;
+  color:var(--ink-soft);
+  border:1px solid var(--line);
+  border-radius:99px;
+  padding:8px 16px;
+  background:rgba(18,20,19,.5);
+}
+.chip b{color:var(--gold-bright);font-weight:600}
+.scroll-cue{
+  position:absolute;
+  left:50%;
+  bottom:26px;
+  translate:-50%;
+  display:grid;
+  justify-items:center;
+  gap:8px;
+  color:var(--ink-faint);
+  font-size:.62rem;
+  letter-spacing:.34em;
+  text-indent:.34em;
+}
+.scroll-cue i{
+  width:1px;height:42px;
+  background:linear-gradient(180deg,transparent,var(--gold));
+  animation:cue 2.2s ease-in-out infinite;
+  transform-origin:top;
+}
+@keyframes cue{0%{transform:scaleY(0)}45%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+@media (prefers-reduced-motion:reduce){.scroll-cue i{animation:none}}
+
+/* ============ SIGNATURES ============ */
+.sig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:980px){.sig-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.sig-grid{grid-template-columns:1fr}}
+.sig-card{
+  position:relative;
+  border-radius:var(--radius);
+  overflow:hidden;
+  background:var(--glass);
+  border:1px solid var(--line);
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  box-shadow:var(--shadow);
+  transition:transform .45s cubic-bezier(.2,.8,.25,1), border-color .35s ease;
+}
+.sig-card:hover{transform:translateY(-7px);border-color:var(--line-strong)}
+.sig-card figure{position:relative;aspect-ratio:4/3.2;overflow:hidden}
+.sig-card figure img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.25,1)}
+.sig-card:hover figure img{transform:scale(1.06)}
+.sig-card figure::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(11,12,12,0) 42%,rgba(11,12,12,.88) 100%);
+}
+.sig-tag{
+  position:absolute;
+  top:14px;left:14px;
+  z-index:2;
+  font-size:.58rem;
+  font-weight:700;
+  letter-spacing:.24em;
+  text-indent:.24em;
+  color:#120e04;
+  background:linear-gradient(135deg,#ecd9a8,#cfa858);
+  border-radius:99px;
+  padding:6px 12px;
+}
+.sig-body{position:relative;z-index:2;padding:4px 20px 20px;margin-top:-42px}
+.sig-body .dari{font-family:"Amiri",serif;color:rgba(233,213,163,.55);font-size:1rem}
+.sig-body h3{font-family:var(--disp);color:var(--gold-bright);font-size:1.22rem;font-weight:600;margin:2px 0 6px}
+.sig-body p{font-size:.88rem;color:var(--ink-soft);min-height:3.4em}
+.sig-more{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.74rem;font-weight:600;letter-spacing:.16em;
+  color:var(--gold);margin-top:10px;transition:gap .3s ease,color .3s ease;
+}
+.sig-more:hover{gap:13px;color:var(--gold-bright)}
+.img-fallback{width:100%;height:100%;display:grid;place-items:center;background:radial-gradient(360px 240px at 50% 34%,rgba(216,178,100,.16),transparent 70%),#151716}
+.img-fallback b{font-family:var(--disp);font-size:2.6rem;color:rgba(233,213,163,.5)}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,64px);align-items:center}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}}
+.about-copy h2{font-size:clamp(1.9rem,4.3vw,3rem);margin:16px 0 18px}
+.about-copy p{color:var(--ink-soft);margin-bottom:16px;font-size:1rem}
+.about-copy p strong{color:var(--gold-bright);font-weight:500}
+.about-sign{
+  font-family:"Amiri",serif;
+  font-size:1.2rem;
+  color:rgba(233,213,163,.6);
+  margin-bottom:26px;
+}
+.milestones{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+@media (max-width:560px){.milestones{grid-template-columns:1fr}}
+.miles{
+  display:flex;align-items:center;gap:12px;
+  border:1px solid var(--line);
+  background:var(--glass);
+  border-radius:14px;
+  padding:13px 16px;
+}
+.miles svg{width:26px;height:26px;flex:none}
+.miles b{display:block;font-size:.86rem;color:var(--ink);font-weight:600}
+.miles span{font-size:.68rem;letter-spacing:.14em;color:var(--ink-faint)}
+.about-panel{
+  position:relative;
+  border-radius:26px;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,rgba(31,122,77,.14),rgba(22,24,23,.7) 34%,rgba(22,24,23,.75) 66%,rgba(168,39,49,.15));
+  padding:clamp(28px,4vw,46px);
+  text-align:center;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.about-panel::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cpath d='M32 0l8 8-8 8-8-8z' fill='none' stroke='%23d8b264' stroke-opacity='.12'/%3E%3Cpath d='M0 32l8 8-8 8z' fill='none' stroke='%23d8b264' stroke-opacity='.08'/%3E%3C/svg%3E");
+  opacity:.5;
+  pointer-events:none;
+}
+.about-panel .crest-big{width:min(150px,34vw);margin:0 auto 20px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.5))}
+.about-panel .dari-big{font-family:"Amiri",serif;font-size:clamp(1.9rem,4.4vw,2.7rem);color:var(--gold-bright);margin-bottom:6px}
+.about-panel .est-line{font-size:.66rem;letter-spacing:.4em;text-indent:.4em;color:var(--ink-soft);margin-bottom:22px}
+.about-panel blockquote{
+  font-family:var(--disp);
+  font-size:1.06rem;
+  line-height:1.7;
+  color:var(--ink-soft);
+  font-style:italic;
+}
+.about-panel .tri{height:3px;border-radius:99px;width:130px;margin:24px auto 0;background:linear-gradient(90deg,#141414,#8c1d27 40%,#135233 92%)}
+
+/* ============ VISIT BAND ============ */
+.visit-band{
+  position:relative;
+  border-radius:26px;
+  border:1px solid var(--line);
+  overflow:hidden;
+  background:var(--glass-2);
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
+  box-shadow:var(--shadow);
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+}
+@media (max-width:880px){.visit-band{grid-template-columns:1fr}}
+.visit-band::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(600px 300px at 0% 0%, rgba(31,122,77,.12), transparent 60%),
+    radial-gradient(600px 300px at 100% 100%, rgba(168,39,49,.12), transparent 60%);
+  pointer-events:none;
+}
+.vb-left{padding:clamp(26px,4vw,44px);position:relative}
+.vb-left h2{font-size:clamp(1.5rem,3vw,2.2rem);margin:14px 0 10px}
+.vb-addr{color:var(--ink-soft);font-size:.95rem;margin-bottom:22px}
+.vb-addr b{color:var(--ink);font-weight:500}
+.vb-actions{display:flex;flex-wrap:wrap;gap:12px}
+.vb-right{
+  padding:clamp(26px,4vw,44px);
+  position:relative;
+  border-left:1px solid var(--line);
+  display:grid;
+  align-content:center;
+  gap:14px;
+}
+@media (max-width:880px){.vb-right{border-left:none;border-top:1px solid var(--line)}}
+.vb-right .lbl{font-size:.66rem;letter-spacing:.36em;text-indent:.36em;color:var(--gold)}
+.vb-tel{
+  font-family:var(--disp);
+  font-size:clamp(1.3rem,3vw,1.9rem);
+  color:var(--gold-bright);
+  letter-spacing:.04em;
+  transition:color .3s ease;
+}
+.vb-tel:hover{color:#fff}
+.vb-note{font-size:.8rem;color:var(--ink-faint)}
+.vb-badge{
+  position:absolute;
+  top:18px;right:18px;
+  font-size:.58rem;
+  font-weight:700;
+  letter-spacing:.22em;
+  text-indent:.22em;
+  color:var(--gold-bright);
+  border:1px solid var(--line-strong);
+  border-radius:99px;
+  padding:7px 14px;
+  background:rgba(18,20,19,.6);
+}
+
+/* ============ FOOTER ============ */
+footer{
+  border-top:1px solid var(--line);
+  padding:54px 0 30px;
+  position:relative;
+}
+footer::before{
+  content:"";
+  position:absolute;
+  top:-1px;left:0;right:0;
+  height:2px;
+  background:linear-gradient(90deg,#135233,rgba(216,178,100,.5),#8c1d27);
+  opacity:.5;
+}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px;margin-bottom:40px}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr;gap:28px}}
+.foot-brand svg{height:52px;width:auto;margin-bottom:14px}
+.foot-brand p{color:var(--ink-faint);font-size:.86rem;max-width:300px}
+.foot-col h4{font-size:.68rem;letter-spacing:.34em;text-indent:.34em;color:var(--gold);margin-bottom:16px}
+.foot-col a,.foot-col span{display:block;color:var(--ink-soft);font-size:.88rem;padding:5px 0;transition:color .3s ease}
+.foot-col a:hover{color:var(--gold-bright)}
+.foot-bottom{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+  border-top:1px solid var(--line);
+  padding-top:22px;
+  color:var(--ink-faint);
+  font-size:.74rem;
+  letter-spacing:.06em;
+}
+.foot-flagline{
+  display:inline-flex;
+  gap:4px;
+  margin-left:auto;
+}
+.foot-flagline i{width:26px;height:4px;border-radius:2px;display:block}
+.foot-flagline i:nth-child(1){background:#1a1a1a;border:1px solid rgba(233,213,163,.25)}
+.foot-flagline i:nth-child(2){background:linear-gradient(180deg,#8c1d27,#5c151d)}
+.foot-flagline i:nth-child(3){background:linear-gradient(180deg,#135233,#0e3a24)}
+
+/* nav reveal on load */
+.nav,.hero-wrap{transition:opacity .8s ease,transform .8s ease}
+body:not(.revealed) .nav{opacity:0}
+body:not(.revealed) .hero-wrap{opacity:0;transform:translateY(22px)}
+@media (prefers-reduced-motion:reduce){
+  body:not(.revealed) .nav,body:not(.revealed) .hero-wrap{opacity:1;transform:none}
+}
+html.flat .reveal{opacity:1!important;transform:none!important}
+html.flat .hero{min-height:auto!important;padding:120px 0 60px}
+</style>
+
+</head>
+<body>
+
+<!-- hidden crest symbol reused across page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9d5a3"/><stop offset=".45" stop-color="#cfa858"/><stop offset="1" stop-color="#9a7733"/>
+    </linearGradient>
+    <g id="crest">
+      <circle cx="48" cy="48" r="46" fill="rgba(10,11,11,.92)"/>
+      <circle cx="48" cy="48" r="42.5" fill="none" stroke="url(#gGold)" stroke-width="1.6"/>
+      <circle cx="48" cy="48" r="35.5" fill="none" stroke="#b98f43" stroke-width="2.4" stroke-dasharray="2.6 6.4" stroke-linecap="round" opacity=".9"/>
+      <g stroke="#d8b264" stroke-width="1.6" stroke-linecap="round" opacity=".9">
+        <path d="M48 13.6v5"/><path d="M48 13.6v5" transform="rotate(42 48 48)"/><path d="M48 13.6v5" transform="rotate(-42 48 48)"/><path d="M48 13.6v5" transform="rotate(138 48 48)"/><path d="M48 13.6v5" transform="rotate(-138 48 48)"/>
+      </g>
+      <g fill="#e9d5a3">
+        <path d="M33 22 C36 15.5 42 15.5 45 22 C42 20.5 40.5 18.5 39 18.5 C37.5 18.5 36 20.5 33 22 Z"/>
+        <path d="M52 17 C54 12.5 58.5 12.5 60.5 17 C58.5 16 57.5 14.5 56.2 14.5 C55 14.5 54 16 52 17 Z" fill="#cfa858"/>
+      </g>
+      <g stroke="#cfa858" stroke-width="1.8" stroke-linecap="round">
+        <path d="M25.5 34v26"/><path d="M70.5 34v26"/>
+      </g>
+      <path d="M25.5 34 L18 38.5 L25.5 43 Z" fill="#e9d5a3"/>
+      <path d="M70.5 34 L78 38.5 L70.5 43 Z" fill="#e9d5a3"/>
+      <path d="M33 62 V46 Q33 31.5 48 25.5 Q63 31.5 63 46 V62" fill="none" stroke="url(#gGold)" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M38 62 V47 Q38 36.5 48 32.5 Q58 36.5 58 47 V62" fill="rgba(233,213,163,.16)" stroke="#e9d5a3" stroke-width="1.4"/>
+      <g fill="#cfa858">
+        <rect x="63.5" y="56" width="7" height="3.4" rx=".8"/>
+        <rect x="63.5" y="50.5" width="7" height="3.4" rx=".8"/>
+        <rect x="63.5" y="45" width="7" height="3.4" rx=".8"/>
+      </g>
+      <path d="M23 62 H73" stroke="#d8b264" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ============ SPLASH ============ -->
+<div id="splash" aria-hidden="true">
+  <!-- corner flags: two old Afghan tricolors, half emerged -->
+  <div class="sp-flag sp-flag--l" aria-hidden="true">
+    <div class="cloth">
+      <svg viewBox="0 0 300 200" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="fcl" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/>
+          </linearGradient>
+        </defs>
+        <rect width="100" height="200" fill="#151515"/>
+        <rect x="100" width="100" height="200" fill="#8c1d27"/>
+        <rect x="200" width="100" height="200" fill="#135233"/>
+        <rect width="300" height="200" fill="url(#fcl)"/>
+        <g transform="translate(150 100) scale(.34) translate(-48 -48)" fill="none" stroke="#f3ead6" stroke-width="4">
+          <path d="M48 13.6v5" stroke-linecap="round"/>
+          <path d="M33 62 V46 Q33 31.5 48 25.5 Q63 31.5 63 46 V62" stroke-linecap="round" stroke-width="4.6"/>
+          <path d="M38 62 V47 Q38 36.5 48 32.5 Q58 36.5 58 47 V62" stroke-width="2.4"/>
+          <path d="M25.5 34v26 M70.5 34v26" stroke-linecap="round" stroke-width="3"/>
+          <path d="M25.5 34 L18 38.5 L25.5 43 Z M70.5 34 L78 38.5 L70.5 43 Z" fill="#f3ead6" stroke="none"/>
+          <path d="M23 62 H73" stroke-linecap="round" stroke-width="3.4"/>
+          <circle cx="48" cy="48" r="42" stroke-dasharray="3 8" stroke-width="3.4" opacity=".75"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="sp-flag sp-flag--r" aria-hidden="true">
+    <div class="cloth">
+      <svg viewBox="0 0 300 200" preserveAspectRatio="none">
+        <rect width="100" height="200" fill="#151515"/>
+        <rect x="100" width="100" height="200" fill="#8c1d27"/>
+        <rect x="200" width="100" height="200" fill="#135233"/>
+        <rect width="300" height="200" fill="url(#fcl)"/>
+        <g transform="translate(150 100) scale(.34) translate(-48 -48)" fill="none" stroke="#f3ead6" stroke-width="4">
+          <path d="M48 13.6v5" stroke-linecap="round"/>
+          <path d="M33 62 V46 Q33 31.5 48 25.5 Q63 31.5 63 46 V62" stroke-linecap="round" stroke-width="4.6"/>
+          <path d="M38 62 V47 Q38 36.5 48 32.5 Q58 36.5 58 47 V62" stroke-width="2.4"/>
+          <path d="M25.5 34v26 M70.5 34v26" stroke-linecap="round" stroke-width="3"/>
+          <path d="M25.5 34 L18 38.5 L25.5 43 Z M70.5 34 L78 38.5 L70.5 43 Z" fill="#f3ead6" stroke="none"/>
+          <path d="M23 62 H73" stroke-linecap="round" stroke-width="3.4"/>
+          <circle cx="48" cy="48" r="42" stroke-dasharray="3 8" stroke-width="3.4" opacity=".75"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="sp-center">
+    <div class="sp-crest"><svg viewBox="0 0 96 96" style="width:100%"><use href="#crest"/></svg></div>
+    <div class="sp-word" aria-label="AL ABABEEL"><span style="--i:0">A</span><span style="--i:1">L</span><span style="--i:2">&nbsp;</span><span style="--i:3">A</span><span style="--i:4">B</span><span style="--i:5">A</span><span style="--i:6">B</span><span style="--i:7">E</span><span style="--i:8">E</span><span style="--i:9">L</span></div>
+    <p class="sp-dari">الابابيل</p>
+    <p class="sp-sub">AFGHAN&nbsp;RESTAURANT&nbsp;·&nbsp;DUBAI</p>
+    <div class="sp-ribbon"><i></i></div>
+    <p class="sp-est">EST.&nbsp;AUGUST&nbsp;2026</p>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="index.html" aria-label="Al Ababeel home">
+    <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+    <span class="nname">AL&nbsp;ABABEEL<span class="nsub">AFGHAN&nbsp;RESTAURANT</span></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#home" class="on">Home</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+    <a href="menu.html">Menu</a>
+  </nav>
+  <a class="nav-call" href="tel:+971558664409">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    +971 55 866 4409
+  </a>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+</header>
+
+<div class="nav-panel" id="navPanel">
+  <nav aria-label="Mobile">
+    <a href="#home">Home</a>
+    <a href="#taste">Signatures</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+    <a href="menu.html">Menu</a>
+    <a class="nptel" href="tel:+971558664409">+971 55 866 4409</a>
+  </nav>
+</div>
+
+<main id="home">
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-mark" aria-hidden="true"><svg viewBox="0 0 96 96" style="width:100%"><use href="#crest"/></svg></div>
+    <div class="swallow sw-a" aria-hidden="true"><svg viewBox="0 0 96 40"><path d="M6 30 C22 4 52 0 88 8 C66 10 56 16 50 24 C34 34 16 34 6 30 Z" fill="none" stroke="#e9d5a3" stroke-width="2.5"/></svg></div>
+    <div class="swallow sw-b" aria-hidden="true"><svg viewBox="0 0 96 40"><path d="M6 30 C22 4 52 0 88 8 C66 10 56 16 50 24 C34 34 16 34 6 30 Z" fill="none" stroke="#e9d5a3" stroke-width="2.5"/></svg></div>
+    <div class="wrap hero-wrap">
+      <p class="kicker reveal">Saih Shuaib 2 · Dubai</p>
+      <h1 class="reveal">Fire, Smoke &amp; Saffron<em>The Afghan Table Lives Here</em></h1>
+      <p class="lead reveal">Charcoal-grilled kababs, Shinwari karahi and hand-raised Kabuli pulao — cooked the Kabul way, served the Afghan way: generous, warm and always with extra naan.</p>
+      <p class="dari reveal">مهمان خدا کی رحمت دہے</p>
+      <div class="hero-cta reveal">
+        <a class="btn btn-gold" href="menu.html">Explore the Menu
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="visit.html">Find Us in Dubai</a>
+      </div>
+      <div class="hero-meta reveal">
+        <span class="chip"><b>Est.</b> August 2026</span>
+        <span class="chip"><b>Halal</b> always</span>
+        <span class="chip"><b>Dine-in</b> · Takeaway</span>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">TASTE<i></i></div>
+  </section>
+
+  <div class="tri-line" role="presentation"></div>
+
+  <!-- ============ SIGNATURES ============ -->
+  <section class="section" id="taste">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Off the Charcoal</p>
+        <h2>From the Clay Fire</h2>
+        <p>Four plates Dubai will drive across lanes for. The kind of food you measure a quartier by.</p>
+      </div>
+      <div class="sig-grid">
+        <article class="sig-card reveal">
+          <figure>
+            <span class="sig-tag">Signature</span>
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be92dbd?w=900&auto=format&fit=crop&q=70" alt="Kabuli pulao with caramel carrots and raisins" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'<b>ك</b>'}))">
+          </figure>
+          <div class="sig-body">
+            <p class="dari">کابلی پلو</p>
+            <h3>Kabuli Pulao</h3>
+            <p>Sweet-scented rice raised in saffron broth, crowned with caramelised carrots, raisins and falling-tender lamb.</p>
+            <a class="sig-more" href="menu.html#rice">See it in the menu
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+        <article class="sig-card reveal">
+          <figure>
+            <span class="sig-tag">Signature</span>
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=900&auto=format&fit=crop&q=70" alt="Shinwari lamb karahi in a cast-iron pot" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'<b>ش</b>'}))">
+          </figure>
+          <div class="sig-body">
+            <p class="dari">شنواری کڑاہی</p>
+            <h3>Shinwari Karahi</h3>
+            <p>Lamb from the Shinwari valley school — salt, tomato and green chilli only, proven in ninety minutes of open flame.</p>
+            <a class="sig-more" href="menu.html#karahi">See it in the menu
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+        <article class="sig-card reveal">
+          <figure>
+            <span class="sig-tag">Signature</span>
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=900&auto=format&fit=crop&q=70" alt="Mantu dumplings with yogurt and lentil sauce" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'<b>م</b>'}))">
+          </figure>
+          <div class="sig-body">
+            <p class="dari">منتو</p>
+            <h3>Mantu</h3>
+            <p>Hand-pleated dumplings steamed open, drowned in garlic yogurt, lentil sauce and dried-mint oil. Order two plates.</p>
+            <a class="sig-more" href="menu.html#classics">See it in the menu
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+        <article class="sig-card reveal">
+          <figure>
+            <span class="sig-tag">Signature</span>
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&auto=format&fit=crop&q=70" alt="Charcoal-grilled Afghan mixed BBQ skewers" loading="lazy"
+                 onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'img-fallback',innerHTML:'<b>ک</b>'}))">
+          </figure>
+          <div class="sig-body">
+            <p class="dari">مکس باربیکیو</p>
+            <h3>Mix BBQ</h3>
+            <p>Chopan, seekh and murgh tikka off one charcoal bed — the smoke you can hear from the road.</p>
+            <a class="sig-more" href="menu.html#bbq">See it in the menu
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="tri-line" role="presentation"></div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="kicker reveal">Our Story</p>
+        <h2 class="reveal">A New Flame, Fed by Old Fires</h2>
+        <p class="reveal"><strong>Al Ababeel</strong> opened its doors in <strong>August 2026</strong> carrying recipes older than most restaurants in Dubai — the charcoal craft of Kandahar, the pastry hands of Kabul, and the pulao patience that only a family kitchen can teach. We cook the way a mother does: slowly, generously, and without shortcuts.</p>
+        <p class="reveal">Everything begins with the fire. Lamb and chicken meet real charcoal, never gas. Spices are pounded fresh each morning. The pulao steams under domed lids until every grain stands on its own — then it's showered with sweet carrots and raisins and set down in front of you like a gift.</p>
+        <p class="reveal">This is Afghan hospitality — <strong>mehmani</strong>: the table never runs empty, the naan keeps coming, and you are somebody's guest here, not a table number.</p>
+        <div class="milestones reveal">
+          <div class="miles">
+            <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+            <div><b>Established August 2026</b><span>NEWLY OPENED</span></div>
+          </div>
+          <div class="miles">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d8b264" stroke-width="1.8" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><b>Saih Shuaib 2, Dubai</b><span>DUBAI · UAE</span></div>
+          </div>
+          <div class="miles">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d8b264" stroke-width="1.8" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M7 16l4-6 4 3 5-8"/></svg>
+            <div><b>Family recipes</b><span>KABUL · KANDAHAR</span></div>
+          </div>
+          <div class="miles">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#d8b264" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l2.5 5.3 5.5.7-4 4 1 5.6-5-2.8-5 2.8 1-5.6-4-4 5.5-.7z"/></svg>
+            <div><b>Charcoal, always</b><span>REAL FIRE · REAL SMOKE</span></div>
+          </div>
+        </div>
+      </div>
+      <aside class="about-panel reveal" aria-label="Since August 2026">
+        <div class="crest-big"><svg viewBox="0 0 96 96" style="width:100%"><use href="#crest"/></svg></div>
+        <p class="dari-big">ابابیل</p>
+        <p class="est-line">ESTABLISHED · AUGUST 2026</p>
+        <blockquote>The ababeel are the swallow flock that flies together — one wing, one sky. One kitchen, one family, one table for all of Dubai.</blockquote>
+        <div class="tri" role="presentation"></div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="tri-line" role="presentation"></div>
+
+  <!-- ============ VISIT BAND ============ -->
+  <section class="section" id="visit">
+    <div class="wrap visit-band reveal">
+      <div class="vb-left">
+        <span class="vb-badge">NEWLY OPENED</span>
+        <p class="kicker">Find Us</p>
+        <h2>Saih Shuaib 2, Dubai</h2>
+        <p class="vb-addr">
+          <b>Plus Code V2GV+4X8</b><br>
+          Saih Shuaib 2 · Dubai · United Arab Emirates
+        </p>
+        <div class="vb-actions">
+          <a class="btn btn-gold" href="https://www.google.com/maps/dir/?api=1&destination=V2GV%2B4X8%20Saih%20Shuaib%202%20Dubai" target="_blank" rel="noopener">Get Directions
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.8 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"/><path d="M12 22v-6M12 12h10"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/971558664409" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="vb-right">
+        <p class="lbl">CALL THE TABLE</p>
+        <a class="vb-tel" href="tel:+971558664409">+971 55 866 4409</a>
+        <p class="vb-note">No socials, no noise — one phone, one promise. Dine-in and takeaway, daily.</p>
+        <a class="sig-more" href="visit.html">Full visit page
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+          <p><b style="color:var(--gold-bright)">AL ABABEEL</b> — Afghan restaurant in Saih Shuaib 2, Dubai. Charcoal fire, family recipes, established August 2026.</p>
+        </div>
+        <div class="foot-col">
+          <h4>EXPLORE</h4>
+          <a href="#taste">Signatures</a>
+          <a href="#about">Our Story</a>
+          <a href="menu.html">Full Menu</a>
+          <a href="visit.html">Visit Us</a>
+        </div>
+        <div class="foot-col">
+          <h4>CONTACT</h4>
+          <a href="tel:+971558664409">+971 55 866 4409</a>
+          <a href="https://wa.me/971558664409" target="_blank" rel="noopener">WhatsApp</a>
+          <span>V2GV+4X8, Saih Shuaib 2, Dubai, UAE</span>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> Al Ababeel Afghan Restaurant · Dubai</span>
+        <span class="foot-flagline" aria-label="Black, red and green — old Afghanistan colours"><i></i><i></i><i></i></span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var splash=document.getElementById('splash');
+  var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nosplash=/[?&]nosplash/.test(location.search);
+  var hold=/[?&]splashhold/.test(location.search);
+  var seen=false;
+  try{seen=!!sessionStorage.getItem('aab_splash_v1')}catch(e){}
+  var start=function(){
+    html.classList.remove('loading');
+    if(hold){splash.classList.add('is-go');document.body.classList.add('revealed');return}
+    if(!reduced&&!seen&&!nosplash){
+      try{sessionStorage.setItem('aab_splash_v1','1')}catch(e){}
+      splash.classList.add('is-go');
+      setTimeout(function(){splash.classList.add('is-out')},4150);
+    }else{
+      splash.classList.add('is-out');
+    }
+    setTimeout(function(){
+      splash.remove();
+      document.body.classList.add('revealed');
+    },660);
+  };
+  var html=document.documentElement;
+  if(document.readyState==='complete'||document.readyState==='interactive'){requestAnimationFrame(start)}
+  else{addEventListener('DOMContentLoaded',function(){requestAnimationFrame(start)})}
+})();
+
+(function(){
+  var yr=document.getElementById('yr');
+  if(yr)yr.textContent=new Date().getFullYear();
+  var dbg=location.search.match(/[?&]got=([^&]*)/);
+  if(dbg){
+    document.documentElement.style.scrollBehavior='auto';
+    var t=setInterval(function(){
+      var el=document.getElementById(dbg[1]);
+      if(el){clearInterval(t);el.scrollIntoView({block:'start',behavior:'auto'})}
+    },300);
+    setTimeout(function(){clearInterval(t)},9000);
+  }
+  if(/[?&]flat/.test(location.search)){document.documentElement.classList.add('flat')}
+})();
+
+/* nav solidity */
+(function(){
+  var nav=document.getElementById('nav');
+  var onScroll=function(){nav.classList.toggle('is-solid',scrollY>30)};
+  addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+
+/* mobile panel */
+(function(){
+  var b=document.getElementById('burger'),p=document.getElementById('navPanel');
+  if(!b)return;
+  b.addEventListener('click',function(){
+    var open=p.classList.toggle('open');
+    b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  p.addEventListener('click',function(e){
+    if(e.target.closest('a')){p.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+  });
+})();
+
+/* reveal on scroll */
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver'in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){
+    els.forEach(function(el){el.classList.add('in')});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}
+    });
+  },{threshold:.14,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>

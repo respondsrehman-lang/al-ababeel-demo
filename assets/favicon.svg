@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Al Ababeel">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9d5a3"/>
+      <stop offset="1" stop-color="#9a7733"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0d0e0e"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="url(#g)" stroke-width="1.6"/>
+  <circle cx="32" cy="32" r="23" fill="none" stroke="#b98f43" stroke-width="1.8" stroke-dasharray="2 4.4" stroke-linecap="round"/>
+  <path d="M20 42 V33 Q20 24.5 32 20.5 Q44 24.5 44 33 V42" fill="none" stroke="url(#g)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M24 42 V34 Q24 28 32 25 Q40 28 40 34 V42" fill="rgba(233,213,163,.16)"/>
+  <g fill="#cfa858">
+    <rect x="44.5" y="40" width="4.6" height="2.4" rx=".6"/>
+    <rect x="44.5" y="36.4" width="4.6" height="2.4" rx=".6"/>
+  </g>
+  <path d="M15 42 H49" stroke="#d8b264" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M23 14.5 C25 10.5 29 10.5 31 14.5 C29 13.3 28.2 12 27 12 C25.8 12 25 13.3 23 14.5 Z" fill="#e9d5a3"/>
+  <path d="M35 13 C36.6 10 39.6 10 41 13 C39.6 12.3 39 11.3 38 11.3 C37 11.3 36.4 12.3 35 13 Z" fill="#cfa858"/>
+</svg>

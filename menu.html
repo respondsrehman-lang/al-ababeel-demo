@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Al Ababeel Afghan Restaurant Dubai | Kabuli Pulao, Shinwari Karahi, Mantu · AED</title>
+<meta name="description" content="The full menu of Al Ababeel Afghan Restaurant, Saih Shuaib 2, Dubai — 10 categories of Afghan food: kebabs, karahi, pulao (priced in AED), mantu, qormas, breads, firni and family feasts.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:title" content="Al Ababeel Afghan Restaurant — The Full Menu">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Charcoal kebabs, Shinwari karahi, hand-raised pulao and firni. Saih Shuaib 2, Dubai.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&auto=format&fit=crop&q=75">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Jost:wght@400;500;600;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0c0c;
+  --bg-2:#111312;
+  --ink:#f1ead9;
+  --ink-soft:#b9b3a2;
+  --ink-faint:#847e6d;
+  --gold:#d8b264;
+  --gold-bright:#ecd9a8;
+  --gold-deep:#a9832f;
+  --gold-soft:rgba(216,178,100,.13);
+  --green:#1f7a4d;
+  --green-deep:#123b2b;
+  --red:#a82731;
+  --red-deep:#5c151d;
+  --glass:rgba(22,24,23,.55);
+  --glass-2:rgba(26,28,27,.72);
+  --line:rgba(233,213,163,.15);
+  --line-strong:rgba(233,213,163,.3);
+  --radius:20px;
+  --shadow:0 30px 60px -30px rgba(0,0,0,.75);
+  --disp:"Cinzel",Georgia,serif;
+  --body:"Jost",system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+}
+body{
+  font-family:var(--body);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+    radial-gradient(1050px 640px at -6% -10%, rgba(31,122,77,.22), transparent 62%),
+    radial-gradient(920px 640px at 106% 8%, rgba(168,39,49,.18), transparent 62%),
+    radial-gradient(1200px 760px at 50% 120%, rgba(31,122,77,.13), transparent 64%),
+    linear-gradient(135deg,#0e1310 0%,#0b0c0c 40%,#0b0c0c 60%,#110a0c 100%);
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+}
+::selection{background:var(--gold);color:#100d06}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  padding:14px clamp(16px,4vw,42px);
+  background:rgba(11,12,12,.82);
+  -webkit-backdrop-filter:blur(14px) saturate(1.3);
+  backdrop-filter:blur(14px) saturate(1.3);
+  box-shadow:0 1px 0 var(--line), 0 18px 42px -22px rgba(0,0,0,.7);
+}
+.nav-logo{display:flex;align-items:center;gap:12px;min-width:0}
+.nav-logo svg{height:42px;width:auto;flex:none}
+.nav-logo .nname{font-family:var(--disp);font-size:.94rem;letter-spacing:.2em;color:var(--gold-bright);white-space:nowrap}
+.nav-logo .nsub{display:block;font-family:var(--body);font-size:.54rem;letter-spacing:.4em;color:var(--ink-faint);margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)}
+.nav-links a{font-size:.82rem;font-weight:500;letter-spacing:.14em;color:var(--ink-soft);position:relative;padding:6px 2px;transition:color .3s ease}
+.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;border-radius:99px;background:linear-gradient(90deg,#135233,#8c1d27,var(--gold));transition:right .35s ease}
+.nav-links a:hover,.nav-links a.on{color:var(--gold-bright)}
+.nav-links a:hover::after,.nav-links a.on::after{right:0}
+.nav-call{display:inline-flex;align-items:center;gap:9px;font-size:.78rem;font-weight:600;letter-spacing:.08em;color:var(--gold-bright);border:1px solid var(--line-strong);border-radius:99px;padding:9px 18px;transition:background .3s ease,border-color .3s ease,transform .3s ease;white-space:nowrap}
+.nav-call:hover{background:var(--gold-soft);border-color:var(--gold);transform:translateY(-1px)}
+.nav-burger{display:none;flex-direction:column;gap:5px;padding:10px}
+.nav-burger i{display:block;width:22px;height:2px;background:var(--gold-bright);border-radius:2px}
+@media (max-width:900px){
+  .nav-links,.nav-call{display:none}
+  .nav-burger{display:flex}
+  .nav-logo svg{height:36px}
+}
+.nav-panel{position:fixed;inset:0;z-index:99;display:grid;place-items:center;text-align:center;background:rgba(9,10,10,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .35s ease}
+.nav-panel.open{opacity:1;pointer-events:auto}
+.nav-panel nav{display:grid;gap:26px}
+.nav-panel a{font-family:var(--disp);font-size:1.5rem;letter-spacing:.14em;color:var(--ink-soft);padding:4px 10px}
+.nav-panel a:hover{color:var(--gold-bright)}
+.nav-panel .nptel{font-family:var(--body)!important;font-size:1rem!important;color:var(--gold)!important}
+
+/* ============ PAGE HEAD ============ */
+.mhead{padding:150px 0 34px}
+.wrap{width:min(1160px,92vw);margin:0 auto}
+.kicker{display:inline-flex;align-items:center;gap:14px;font-size:.7rem;font-weight:600;letter-spacing:.38em;text-indent:.38em;color:var(--gold);text-transform:uppercase}
+.kicker::before,.kicker::after{content:"";width:30px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));opacity:.7}
+.kicker::after{background:linear-gradient(90deg,var(--gold),transparent)}
+h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-height:1.14}
+.tri-line{height:3px;margin:0 auto;border-radius:99px;background:linear-gradient(90deg,rgba(20,20,20,.9) 0%,rgba(140,29,39,.9) 34%,rgba(216,178,100,.95) 52%,rgba(216,178,100,.45) 60%,rgba(19,82,51,.9) 90%);box-shadow:0 6px 26px -6px rgba(216,178,100,.25)}
+.mhrow{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:22px}
+.mhead h1{font-size:clamp(2.1rem,5vw,3.4rem);margin:14px 0 10px}
+.mhead .sub{max-width:620px;color:var(--ink-soft);font-size:1rem}
+.mh-chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:600;letter-spacing:.16em;color:var(--ink-soft);border:1px solid var(--line);border-radius:99px;padding:8px 16px;background:rgba(18,20,19,.5)}
+.chip b{color:var(--gold-bright);font-weight:600}
+.dari{font-family:"Amiri",serif;color:rgba(233,213,163,.55)}
+.mhnote{
+  display:flex;align-items:center;gap:12px;
+  margin-top:20px;
+  border:1px solid var(--line);
+  border-left:3px solid var(--gold);
+  background:rgba(18,20,19,.55);
+  border-radius:12px;
+  padding:12px 16px;
+  font-size:.82rem;
+  color:var(--ink-soft);
+  max-width:760px;
+}
+.mhnote svg{flex:none}
+
+/* ============ TOOLBAR ============ */
+.toolbar{
+  position:sticky;
+  top:0;
+  z-index:60;
+  padding:10px 0 12px;
+  background:linear-gradient(180deg,rgba(11,12,12,.92),rgba(11,12,12,.86));
+  -webkit-backdrop-filter:blur(12px) saturate(1.3);
+  backdrop-filter:blur(12px) saturate(1.3);
+  border-bottom:1px solid var(--line);
+}
+.tb-row{display:flex;align-items:center;gap:12px}
+.pills{
+  flex:1;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  padding-bottom:2px;
+}
+.pills::-webkit-scrollbar{display:none}
+.pill{
+  flex:none;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:.76rem;
+  font-weight:500;
+  letter-spacing:.1em;
+  color:var(--ink-soft);
+  border:1px solid var(--line);
+  border-radius:99px;
+  padding:8px 15px;
+  background:rgba(18,20,19,.5);
+  transition:all .3s ease;
+  white-space:nowrap;
+}
+.pill .cnt{font-size:.62rem;color:var(--ink-faint)}
+.pill:hover{border-color:var(--line-strong);color:var(--ink)}
+.pill.on{
+  color:#120e04;
+  background:linear-gradient(135deg,#ecd9a8,#d8b264 55%,#a9832f);
+  border-color:transparent;
+  font-weight:600;
+}
+.pill.on .cnt{color:rgba(18,14,4,.66)}
+.search{
+  position:relative;
+  flex:none;
+}
+.search svg{position:absolute;left:12px;top:50%;translate:0 -50%;opacity:.55}
+.search input{
+  width:190px;
+  font-size:.84rem;
+  color:var(--ink);
+  background:rgba(18,20,19,.6);
+  border:1px solid var(--line);
+  border-radius:99px;
+  padding:9px 14px 9px 36px;
+  transition:border-color .3s ease,width .3s ease;
+}
+.search input::placeholder{color:var(--ink-faint)}
+.search input:focus{outline:none;border-color:var(--gold);width:220px}
+@media (max-width:760px){
+  .search{flex:1}
+  .search input{width:100%}
+  .search input:focus{width:100%}
+}
+
+/* ============ CATEGORY PANEL ============ */
+.menuspace{padding:34px 0 90px}
+.cat-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;padding:8px 2px 22px;max-width:none}
+.cat-head h2{font-size:clamp(1.4rem,3.2vw,2.1rem)}
+.cat-head .dari{font-size:1.3rem}
+.cat-head .cnt{margin-left:auto;font-size:.68rem;letter-spacing:.3em;text-indent:.3em;color:var(--ink-faint)}
+.dish-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:860px){.dish-grid{grid-template-columns:1fr}}
+.dish{
+  display:grid;
+  grid-template-columns:92px 1fr;
+  gap:16px;
+  padding:16px;
+  border-radius:16px;
+  border:1px solid var(--line);
+  background:var(--glass);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  transition:border-color .3s ease,transform .35s ease,background .3s ease;
+}
+.dish:hover{border-color:var(--line-strong);transform:translateY(-3px);background:var(--glass-2)}
+.dish .thumb{
+  width:92px;height:92px;
+  border-radius:14px;
+  overflow:hidden;
+  position:relative;
+  flex:none;
+}
+.dish .thumb img{width:100%;height:100%;object-fit:cover}
+.dish .tile{
+  width:100%;height:100%;
+  display:grid;place-items:center;
+  background:radial-gradient(200px 140px at 50% 30%,rgba(216,178,100,.18),transparent 70%),#151716;
+  border:1px solid var(--line);
+  border-radius:14px;
+}
+.dish .tile b{font-family:var(--disp);font-size:2rem;color:rgba(233,213,163,.55)}
+.dish h3{font-family:var(--disp);color:var(--gold-bright);font-size:1.05rem;font-weight:600;margin-bottom:2px}
+.dish .dari{font-size:.92rem;display:inline;margin-right:8px}
+.dish p{font-size:.8rem;color:var(--ink-soft);margin-top:4px}
+.price-row{display:flex;align-items:center;gap:10px;margin-top:8px}
+.price{
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  border-radius:99px;
+  padding:4px 12px;
+}
+.price-set{color:#120e04;background:linear-gradient(135deg,#ecd9a8,#cfa858)}
+.price-tbd{color:var(--ink-faint);border:1px dashed var(--line-strong)}
+.new-label{
+  font-size:.58rem;
+  font-weight:700;
+  letter-spacing:.22em;
+  text-indent:.22em;
+  color:var(--gold);
+  border:1px solid var(--line-strong);
+  border-radius:99px;
+  padding:3px 10px;
+}
+.empty{padding:60px 20px;text-align:center;color:var(--ink-faint)}
+.empty .dari{font-size:2rem;display:block;margin-bottom:8px}
+
+/* ============ MENU FOOT ============ */
+.mfoot{
+  margin-top:26px;
+  padding:34px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:var(--glass-2);
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+.mfoot h3{font-family:var(--disp);color:var(--gold-bright);font-size:1.3rem;margin-bottom:8px}
+.mfoot p{color:var(--ink-soft);font-size:.9rem;margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.9rem;letter-spacing:.1em;border-radius:99px;padding:13px 26px;transition:transform .3s ease,box-shadow .3s ease,background .3s ease,border-color .3s ease}
+.btn-gold{color:#120e04;background:linear-gradient(135deg,#ecd9a8,#d8b264 55%,#a9832f);box-shadow:0 16px 34px -14px rgba(216,178,100,.5)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 22px 44px -16px rgba(216,178,100,.6)}
+.btn-ghost{color:var(--gold-bright);border:1px solid var(--line-strong)}
+.btn-ghost:hover{background:var(--gold-soft);border-color:var(--gold);transform:translateY(-2px)}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line);padding:50px 0 28px;position:relative}
+footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;background:linear-gradient(90deg,#135233,rgba(216,178,100,.5),#8c1d27);opacity:.5}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px;margin-bottom:38px}
+@media (max-width:760px){.foot-grid{grid-template-columns:1fr;gap:28px}}
+.foot-brand svg{height:52px;width:auto;margin-bottom:14px}
+.foot-brand p{color:var(--ink-faint);font-size:.86rem;max-width:300px}
+.foot-col h4{font-size:.68rem;letter-spacing:.34em;text-indent:.34em;color:var(--gold);margin-bottom:16px}
+.foot-col a,.foot-col span{display:block;color:var(--ink-soft);font-size:.88rem;padding:5px 0;transition:color .3s ease}
+.foot-col a:hover{color:var(--gold-bright)}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);padding-top:22px;color:var(--ink-faint);font-size:.74rem;letter-spacing:.06em}
+.foot-flagline{display:inline-flex;gap:4px;margin-left:auto}
+.foot-flagline i{width:26px;height:4px;border-radius:2px;display:block}
+.foot-flagline i:nth-child(1){background:#1a1a1a;border:1px solid rgba(233,213,163,.25)}
+.foot-flagline i:nth-child(2){background:linear-gradient(180deg,#8c1d27,#5c151d)}
+.foot-flagline i:nth-child(3){background:linear-gradient(180deg,#135233,#0e3a24)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9d5a3"/><stop offset=".45" stop-color="#cfa858"/><stop offset="1" stop-color="#9a7733"/>
+    </linearGradient>
+    <g id="crest">
+      <circle cx="48" cy="48" r="46" fill="rgba(10,11,11,.92)"/>
+      <circle cx="48" cy="48" r="42.5" fill="none" stroke="url(#gGold)" stroke-width="1.6"/>
+      <circle cx="48" cy="48" r="35.5" fill="none" stroke="#b98f43" stroke-width="2.4" stroke-dasharray="2.6 6.4" stroke-linecap="round" opacity=".9"/>
+      <g stroke="#d8b264" stroke-width="1.6" stroke-linecap="round" opacity=".9">
+        <path d="M48 13.6v5"/><path d="M48 13.6v5" transform="rotate(42 48 48)"/><path d="M48 13.6v5" transform="rotate(-42 48 48)"/><path d="M48 13.6v5" transform="rotate(138 48 48)"/><path d="M48 13.6v5" transform="rotate(-138 48 48)"/>
+      </g>
+      <g fill="#e9d5a3">
+        <path d="M33 22 C36 15.5 42 15.5 45 22 C42 20.5 40.5 18.5 39 18.5 C37.5 18.5 36 20.5 33 22 Z"/>
+        <path d="M52 17 C54 12.5 58.5 12.5 60.5 17 C58.5 16 57.5 14.5 56.2 14.5 C55 14.5 54 16 52 17 Z" fill="#cfa858"/>
+      </g>
+      <g stroke="#cfa858" stroke-width="1.8" stroke-linecap="round">
+        <path d="M25.5 34v26"/><path d="M70.5 34v26"/>
+      </g>
+      <path d="M25.5 34 L18 38.5 L25.5 43 Z" fill="#e9d5a3"/>
+      <path d="M70.5 34 L78 38.5 L70.5 43 Z" fill="#e9d5a3"/>
+      <path d="M33 62 V46 Q33 31.5 48 25.5 Q63 31.5 63 46 V62" fill="none" stroke="url(#gGold)" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M38 62 V47 Q38 36.5 48 32.5 Q58 36.5 58 47 V62" fill="rgba(233,213,163,.16)" stroke="#e9d5a3" stroke-width="1.4"/>
+      <g fill="#cfa858">
+        <rect x="63.5" y="56" width="7" height="3.4" rx=".8"/>
+        <rect x="63.5" y="50.5" width="7" height="3.4" rx=".8"/>
+        <rect x="63.5" y="45" width="7" height="3.4" rx=".8"/>
+      </g>
+      <path d="M23 62 H73" stroke="#d8b264" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+  </defs>
+</svg>
+
+<header class="nav">
+  <a class="nav-logo" href="index.html" aria-label="Al Ababeel home">
+    <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+    <span class="nname">AL&nbsp;ABABEEL<span class="nsub">AFGHAN&nbsp;RESTAURANT</span></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="visit.html">Visit</a>
+    <a href="#top" class="on" aria-current="page">Menu</a>
+  </nav>
+  <a class="nav-call" href="tel:+971558664409">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    +971 55 866 4409
+  </a>
+  <button class="nav-burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
+</header>
+
+<div class="nav-panel" id="navPanel">
+  <nav aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="visit.html">Visit</a>
+    <a href="menu.html">Menu</a>
+    <a class="nptel" href="tel:+971558664409">+971 55 866 4409</a>
+  </nav>
+</div>
+
+<main id="top">
+  <section class="mhead">
+    <div class="wrap">
+      <p class="kicker">Dine &amp; Takeaway</p>
+      <div class="mhrow">
+        <div>
+          <h1>The Full Menu</h1>
+          <p class="sub">Everything comes off real charcoal or slow steam pans — the Kabul way. Seasoned with our own morning-pounded masala, served with salata and fresh naan.</p>
+        </div>
+        <div class="mh-chips">
+          <span class="chip"><b>10</b> categories</span>
+          <span class="chip"><b id="dishCount">68</b> dishes</span>
+          <span class="chip"><b>AED</b> priced · rice</span>
+        </div>
+      </div>
+      <div class="mhnote">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d8b264" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01"/></svg>
+        <span>New kitchen, August 2026 — the <b style="color:var(--gold-bright)">Rice &amp; Pulao</b> section is priced in AED; every other section shows <span class="price-tbd" style="border-radius:99px;padding:2px 10px">AED —</span> until the family finalises prices. One call and we'll tell you everything: <a href="tel:+971558664409" style="color:var(--gold-bright)">+971 55 866 4409</a>.</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="toolbar" id="toolbar">
+    <div class="wrap tb-row">
+      <div class="pills" id="pills" role="tablist" aria-label="Menu categories"></div>
+      <div class="search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="q" placeholder="Search 68 dishes…" aria-label="Search dishes">
+      </div>
+    </div>
+  </div>
+
+  <section class="menuspace">
+    <div class="wrap" id="out" aria-live="polite"></div>
+  </section>
+
+  <div class="wrap">
+    <div class="mfoot">
+      <h3>Hungry yet?</h3>
+      <p>Saih Shuaib 2, Dubai · Dine-in &amp; takeaway · Established August 2026</p>
+      <a class="btn btn-gold" style="margin-right:10px" href="tel:+971558664409">Call +971 55 866 4409</a>
+      <a class="btn btn-ghost" href="https://wa.me/971558664409" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+          <p><b style="color:var(--gold-bright)">AL ABABEEL</b> — Afghan restaurant in Saih Shuaib 2, Dubai. Charcoal fire, family recipes, established August 2026.</p>
+        </div>
+        <div class="foot-col">
+          <h4>EXPLORE</h4>
+          <a href="index.html">Home</a>
+          <a href="index.html#about">Our Story</a>
+          <a href="menu.html">Full Menu</a>
+          <a href="visit.html">Visit Us</a>
+        </div>
+        <div class="foot-col">
+          <h4>CONTACT</h4>
+          <a href="tel:+971558664409">+971 55 866 4409</a>
+          <a href="https://wa.me/971558664409" target="_blank" rel="noopener">WhatsApp</a>
+          <span>V2GV+4X8, Saih Shuaib 2, Dubai, UAE</span>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="yr">2026</span> Al Ababeel Afghan Restaurant · Dubai</span>
+        <span class="foot-flagline" aria-label="Black, red and green — old Afghanistan colours"><i></i><i></i><i></i></span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script>
+/* ─────────── MENU DATA ─────────── */
+const CATS=[
+ {id:'bbq',name:'Charcoal Kababs',dari:'کباب',note:'One charcoal bed, smoked daily from four in the afternoon.'},
+ {id:'karahi',name:'Karahi Corner',dari:'کڑاہی',note:'Wok-pounded tomato notes, green chilli, coriander — built on flame.'},
+ {id:'rice',name:'Rice & Pulao',dari:'پلو',note:'Domed-lid steaming until every grain stands alone. Priced in AED.'},
+ {id:'classics',name:'Mantu & Old Hands',dari:'منتو',note:'Dumplings, bolani and borani — the plates that raised us.'},
+ {id:'curries',name:'The Curry House',dari:'قورمہ',note:'Qormas slow-cooked in their own onion-caramel base.'},
+ {id:'starters',name:'Starters & Salads',dari:'سلاطہ',note:'Cool, sharp and vinegar-bright — Afghan table starters.'},
+ {id:'breads',name:'Tandoor Breads',dari:'نان',note:'Slapped onto the tandoor wall, pulled out flame-marked.'},
+ {id:'drinks',name:'Tea House',dari:'چاے',note:'Cardamom, cream and rose — the Afghan tea family.'},
+ {id:'sweets',name:'Sweets & Firni',dari:'مٹھائی',note:'Rosewater, pistachio, saffron sugar — end on sweetness.'},
+ {id:'feasts',name:'Family Feasts',dari:'خاندانی',note:'Priced to share. Lay this down and watch the table go quiet.'}
+];
+const U='https://images.unsplash.com/photo-';
+const P='?w=600&auto=format&fit=crop&q=70';
+const D=[
+ /* BBQ */
+ ['bbq','Chopan Kabab','چوپان کباب','Lamb riblets cut square, marinated overnight in yoghurt and onion, charred over the open bed.',false],
+ ['bbq','Kabuli Tikka','کابلی تکہ','Fillet lamb cubes in our house 14-spice — the cube that started a thousand repeat visits.',false],
+ ['bbq','Seekh Kabab','سیخ کباب','Hand-minced lamb kneaded with fat, pressed onto flat iron skewers.',false],
+ ['bbq','Murgh Tikka','مرغ تکہ','Bone-in chicken thigh, lemon, black pepper and a whisper of saffron.',false],
+ ['bbq','Shami Kabab','شمامی کباب','Ground beef and lentil patties, crisped at the edges, soft at the heart.',false],
+ ['bbq','Kabab-e-Ghurid','کباب غرید','Lamb chops, flame-licked, salt-finished. Ask for the gnaw ones.',false],
+ ['bbq','Tikka-e-Boti','تکہ بٹی','Beef shoulder cubes with cumin-salt rub. Weighty and honest.',false],
+ ['bbq','Mahee Kabab','ماہی کباب','Fish tikka under Afghan spice, grilled firm and flaky.',false],
+ ['bbq','Mix BBQ','مکس باربیکیو','Chopan, seekh and murgh tikka — one plate, three weathers of smoke.',U+'1555939594-58d7cb561ad1'+P],
+ /* KARAHI */
+ ['karahi','Shinwari Karahi (Lamb)','شنواری کڑاہی','The Shinwari valley school: salt, tomato and green chilli only. Ninety minutes of patience.',U+'1585937421612-70a008356fbe'+P],
+ ['karahi','Shinwari Karahi (Chicken)','شنواری مرغ','Same silence of spice, faster finish — still all fire, no shortcuts.',false],
+ ['karahi','Murgh Karahi','مرغ کڑاہی','Chicken folded into a slow garlic-tomato reduction, splashed with water for the steam.',false],
+ ['karahi','Kofta Karahi','کفتہ کڑاہی','Hand-rolled meatballs simmered in karahi gravy.',false],
+ ['karahi','Mix Karahi','مکس کڑاہی','Lamb, chicken and kofta in one wok for the undecided.',U+'1585937421612-70a008356fbe'+P],
+ ['karahi','Boneless Karahi','بون لیس','Everything you love, none of the bones. Crowd-pleaser with naan.',false],
+ ['karahi','Qeema Karahi','قیمہ کڑاہی','Minced beef with green peas, finished with crushed coriander.',false],
+ /* RICE — priced */
+ ['rice','Kabuli Pulao (Lamb)','کابلی پلو','Saffron-risen basmati, caramelised carrots, raisins and slow lamb. Our house crown.','28',U+'1512058564366-18510be92dbd'+P],
+ ['rice','Kabuli Pulao (Chicken)','کابلی پلو مرغ','Same dome-raised rice with tender chicken quarters.','24',U+'1512058564366-18510be92dbd'+P],
+ ['rice','Uzbeki Pulao','اُزبکی پلو','Northern brother: layered meat-rice pressed under a heavy lid.',U+'1512058564366-18510be92dbd'+P],
+ ['rice','Qabili Family Pulao','خاندانی قابلی','Pulao for four, laid on the platter like a wedding feast.','95',false],
+ ['rice','Zamarod Pulao','زمرد پلو','Emerald spinach-green rice with shredded lamb, namesake of the flag.',false],
+ ['rice','Yaakhni Pulao','یخنی پلو','Broth-fed rice — subtle, soothing, almost silken.','27',false],
+ ['rice','Mash Pulao','مش پلو','Mung bean and dill rice; the comfort bowl of Kabul winters.','18',false],
+ ['rice','Zarda','زردہ','Sweet saffron rice with nuts and cardamom — dessert or breakfast, your call.','12',false],
+ /* CLASSICS */
+ ['classics','Mantu','منتو','Hand-pleated dumplings steamed open, drowned in garlic yogurt, lentil sauce and dried-mint oil.',U+'1563245372-f21724e3856d'+P],
+ ['classics','Ashak','اشک','Leek dumplings under yogurt and qorma sauce. A two-colour plate.',U+'1563245372-f21724e3856d'+P],
+ ['classics','Bolani Gandana','بولانی گندنه','Leek-stuffed flatbread, griddled till blistered.',false],
+ ['classics','Bolani Kachalu','بولانی کچالو','Potato and green chilli bolani. Ketchupy hands guaranteed.',false],
+ ['classics','Borani Banjan','بورانی بنجن','Eggplant coins in tomato-garlic yogurt, cold-plate perfection.',false],
+ ['classics','Borani Bademjan','بورانی بادمجان','Its sweeter cousin — deeper tomato, softer aubergine.',false],
+ ['classics','Aush','آش','Thick hand-cut noodle broth with beef, kofta and yogurt.',false],
+ ['classics','Sabzi','سبزی','Slow spinach stew glossed with oil, mint-warm.',false],
+ ['classics','Aloo Palak','آلو پالک','Potatoes and spinach — the humble plate that disappears first.',false],
+ /* CURRIES */
+ ['curries','Qorma-e-Sabz','قورمہ سبز','Beef and green peas in velvety dill-tomato gravy.',false],
+ ['curries','Qorma-e-Alu','قورمہ آلو','Dried plum and beef — sweet-sour Afghan signature.',false],
+ ['curries','Murgh Qorma','مرغ قورمہ','Chicken folded into a slow garlic-tomato reduction.',false],
+ ['curries','Kofta Qorma','کفتہ قورمہ','Meatballs rolling in saffron-tinged tomato gravy.',false],
+ ['curries','Daal-e-Gosht','دال گوشت','Lentils carrying lamb — steam-soft, spoon-food.',false],
+ ['curries','Chana Daal','چنہ دال','Split chickpeas, cumin-warm.',false],
+ ['curries','Shorwa','شربہ',' Afghan lamb broth with root vegetables — restorative.',false],
+ /* STARTERS */
+ ['starters','Salata Afghan','سلاطہ','Diced tomato, cucumber and onion in mint vinegar — every table, always.',U+'1512621776951-a57141f2eefd'+P],
+ ['starters','Chaaka','چکہ','Whipped yogurt strained overnight, dusted mint.',false],
+ ['starters','Shorwa-e-Nakhod','شربہ نخود','Chickpea broth sharpened with black pepper.',false],
+ ['starters','Sib-e-Zamin','سیب زمینی','Roasted potato cubes, chili salt, chaaka dip.',false],
+ ['starters','Chatni-e-Sabz','چٹنی سبز','Coriander-green chutney trio.',false],
+ ['starters','Borani Kaddu','بورانی کدو','Sweet pumpkin under yogurt and tomato — chef\'s quiet pride.',false],
+ /* BREADS */
+ ['breads','Naan-e-Roghani','نان روغنی','Butter-brushed oval from the tandoor wall.',U+'1509440159596-0249088772ff'+P],
+ ['breads','Naan-e-Afghani','نان افغانی','The long teardrop with char-blistered crust.',U+'1509440159596-0249088772ff'+P],
+ ['breads','Naan-e-Til','نان تِل','Sesame rounds for scooping karahi.',U+'1509440159596-0249088772ff'+P],
+ ['breads','Naan-e-Panja','نان پنجہ','Finger-pressed soft bread, five-finger knead.',false],
+ ['breads','Naan-e-Keema','نان قیمہ','Stuffed with seasoned minced beef — a meal itself.',false],
+ /* DRINKS */
+ ['drinks','Shir Chai','شیر چاے','Cardamom milk tea, pink-warmed, saffron-threaded.',U+'1571934811356-5cc061b6821f'+P],
+ ['drinks','Qaimak Chai','قيمق چاے','Cream-drift tea — sip gently past the cloud.',U+'1571934811356-5cc061b6821f'+P],
+ ['drinks','Doogh','دوغ','Salted yogurt-mint refresher.',false],
+ ['drinks','Lassi','لاسی','Mango or salt, churned thick.',false],
+ ['drinks','Gulab Sharbat','گلاب شربت','Rose petal iced refresher.',false],
+ ['drinks','Soft Drinks & Water','مشروبات','Cans and bottled water, well-chilled.',false],
+ /* SWEETS */
+ ['sweets','Firni','فرنی','Cardamom-rose milk pudding cooled in shallow bowls, pistachio dusted.',false],
+ ['sweets','Jalebi','جلیبی','Syrup-spiralised, crackled fresh from the pan.',false],
+ ['sweets','Gosh-e-Feel','گوش فیل','Elephant-ear pastry, rose sugar dust, pistachio.',U+'1563805042-7684c019e1cb'+P],
+ ['sweets','Halwa-e-Zard','حلوہ زرد','Saffron halwa, glistening and slow.',false],
+ ['sweets','Baklava','باقلوا','Pistachio layered, honey-rained.',false],
+ ['sweets','Sheer Yakh','شیر یخ','Saffron-frozen Afghan ice cream, hand-churned.',U+'1563805042-7684c019e1cb'+P],
+ /* FEASTS */
+ ['feasts','The Kabuli Feast','خاندانی قابلی','Family pulao + mix BBQ + borani + salata + naan for four.',U+'1558030006-450675393462'+P],
+ ['feasts','The Shinwari Feast','شنواری کڑاہی','One wok of shinwari, a basket of naan, salata and chaaka.',U+'1585937421612-70a008356fbe'+P],
+ ['feasts','Grill Rack Trio','گریل ریک','Three skewers, one plate, zero shyness.',U+'1555939594-58d7cb561ad1'+P],
+ ['feasts','Family Mantu Tray','خاندانی منتو','Three dozen dumplings on one tray.',U+'1563245372-f21724e3856d'+P],
+ ['feasts','Naan Baker\'s Dozen','نان','Thirteen breads, straight off the wall.',U+'1509440159596-0249088772ff'+P]
+].map(function(d){
+  var item={cat:d[0],name:d[1],dari:d[2],desc:d[3],img:false,price:'—'};
+  d.slice(4).forEach(function(v){
+    if(typeof v==='string'){
+      if(v.indexOf('http')===0){item.img=v}
+      else{item.price=v}
+    }
+  });
+  return item;
+});
+
+/* ─────────── RENDER ─────────── */
+var out=document.getElementById('out'),pills=document.getElementById('pills'),q=document.getElementById('q');
+var active='bbq';
+
+function tile(node,item){
+  if(item.img){
+    var img=document.createElement('img');
+    img.loading='lazy';
+    img.alt=item.name;
+    img.src=item.img;
+    img.onerror=function(){
+      var t=document.createElement('div');t.className='tile';
+      var b=document.createElement('b');b.textContent=item.dari.trim()[0]||'ک';
+      t.appendChild(b);img.replaceWith(t);
+    };
+    node.appendChild(img);
+  }else{
+    var t=document.createElement('div');t.className='tile';
+    var b=document.createElement('b');b.textContent=item.dari.trim()[0]||'ک';
+    t.appendChild(b);node.appendChild(t);
+  }
+}
+function render(){
+  var term=q.value.trim().toLowerCase();
+  var html='';
+  if(term){
+    /* cross-category search */
+    var groups=CATS.map(function(c){return{cat:c,items:D.filter(function(d){return d.cat===c.id&&(d.name.toLowerCase().indexOf(term)>-1||d.dari.indexOf(term)>-1||d.desc.toLowerCase().indexOf(term)>-1)})}}).filter(function(g){return g.items.length});
+    if(!groups.length){
+      out.innerHTML='<div class="empty"><span class="dari">نہ پیدا نشد</span><br>Nothing matches “'+term.replace(/[<>&]/g,'')+'” — try “pulao”, “karahi” or “tea”.</div>';
+      return;
+    }
+    groups.forEach(function(g){out.appendChild(catBlock(g.cat.id,g.cat,g.items,true))});
+  }else{
+    var cat=CATS.find(function(c){return c.id===active});
+    var items=D.filter(function(d){return d.cat===active});
+    out.innerHTML='';
+    out.appendChild(catBlock(active,cat,items,false));
+  }
+  document.getElementById('dishCount').textContent=term
+    ?D.filter(function(d){return d.name.toLowerCase().indexOf(term)>-1||d.dari.indexOf(term)>-1||d.desc.toLowerCase().indexOf(term)>-1}).length
+    :D.length;
+}
+function catBlock(id,cat,items,searching){
+  var head=document.createElement('div');
+  head.className='cat-head';head.id=id;
+  head.innerHTML='<h2>'+cat.name+'</h2><span class="dari">'+cat.dari+'</span><p style="width:100%;color:var(--ink-soft);font-size:.88rem">'+cat.note+'</p><span class="cnt">'+items.length+' DISH'+(items.length>1?'ES':'')+'</span>';
+  var grid=document.createElement('div');
+  grid.className='dish-grid';
+  items.forEach(function(item){
+    var card=document.createElement('article');
+    card.className='dish';
+    var th=document.createElement('div');th.className='thumb';tile(th,item);
+    var body=document.createElement('div');
+    var h=document.createElement('h3');h.textContent=item.name;
+    var dari=document.createElement('span');dari.className='dari';dari.textContent=item.dari;
+    var p=document.createElement('p');p.textContent=item.desc;
+    var row=document.createElement('div');row.className='price-row';
+    var price=document.createElement('span');
+    if(item.price==='—'){
+      price.className='price price-tbd';price.textContent='AED —';
+      price.title='Price being finalised — call +971 55 866 4409';
+    }else{
+      price.className='price price-set';price.textContent='AED '+item.price;
+    }
+    row.appendChild(price);
+    if(searching){
+      var back=document.createElement('a');
+      back.className='new-label';back.textContent='SEE IN MENU →';
+      back.href='#'+item.cat;back.onclick=function(){q.value='';render()};
+      row.appendChild(back);
+    }
+    body.appendChild(dari);body.appendChild(h);body.appendChild(p);body.appendChild(row);
+    card.appendChild(th);card.appendChild(body);
+    grid.appendChild(card);
+  });
+  var wrap=document.createElement('div');
+  wrap.appendChild(head);wrap.appendChild(grid);
+  return wrap;
+}
+function buildPills(){
+  CATS.forEach(function(c){
+    var b=document.createElement('button');
+    b.className='pill';b.setAttribute('role','tab');
+    b.dataset.cat=c.id;
+    var n=c.name, cnt=D.filter(function(d){return d.cat===c.id}).length;
+    b.innerHTML=n+'<span class="cnt">'+cnt+'</span>';
+    b.onclick=function(){active=c.id;q.value='';render();markActive();position(b)};
+    pills.appendChild(b);
+  });
+  markActive();
+}
+function markActive(){
+  [].forEach.call(pills.children,function(p){p.classList.toggle('on',p.dataset.cat===active)});
+}
+function position(b){
+  var rect=pills.getBoundingClientRect(),r=b.getBoundingClientRect();
+  if(r.left<rect.left||r.right>rect.right){
+    pills.scrollTo({left:b.offsetLeft-(pills.clientWidth-b.clientWidth)/2,behavior:'smooth'});
+  }
+}
+buildPills();render();
+q.addEventListener('input',render);
+
+/* deep-link ?cat= or #cat */
+(function(){
+  var h=location.hash.replace('#','');
+  if(h&&h.indexOf('menu')===-1){var m=CATS.findIndex(function(c){return c.id===h});if(m>-1)active=h;render();markActive();position(pills.children[m]);setTimeout(function(){document.getElementById(active).scrollIntoView({block:'start'})},60)}
+})();
+
+/* nav */
+(function(){
+  var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();
+  var b=document.getElementById('burger'),p=document.getElementById('navPanel');
+  if(!b)return;
+  b.addEventListener('click',function(){
+    var open=p.classList.toggle('open');b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  p.addEventListener('click',function(e){
+    if(e.target.closest('a')){p.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+  });
+})();
+</script>
+</body>
+</html>
