@@ -34,6 +34,10 @@
   --red-deep:#5c151d;
   --glass:rgba(22,24,23,.55);
   --glass-2:rgba(26,28,27,.72);
+  --glass-brd:rgba(255,255,255,.14);
+  --glass-brd-str:rgba(255,255,255,.26);
+  --glass-grad:linear-gradient(152deg,rgba(255,255,255,.085),rgba(255,255,255,.02) 36%,rgba(216,178,100,.065) 82%,rgba(168,39,49,.05));
+  --glass-blur:blur(22px) saturate(1.55);
   --line:rgba(233,213,163,.15);
   --line-strong:rgba(233,213,163,.3);
   --radius:20px;
@@ -84,7 +88,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
 textarea,input{font:inherit}
 
-/* ============ SPLASH ============ */
+/* ============ SPLASH — real flags from opposite sides, 2s ============ */
 #splash{
   position:fixed;
   inset:0;
@@ -97,73 +101,88 @@ textarea,input{font:inherit}
     radial-gradient(760px 560px at 14% 0%, rgba(31,122,77,.20), transparent 64%),
     radial-gradient(760px 560px at 88% 4%, rgba(168,39,49,.20), transparent 64%),
     linear-gradient(180deg,#0a0b0b 0%,#0d0e0d 46%,#090a0a 100%);
-  transition:opacity .65s ease;
+  transition:opacity .6s ease;
 }
 #splash.is-out{opacity:0;pointer-events:none}
 
-/* floating half-flags from the two top corners */
+/* two real tricolor flags / slide in from beyond opposite screen edges */
 .sp-flag{
   position:absolute;
-  top:-42px;
-  width:min(44vw,470px);
+  top:24%;
+  width:min(40vw,430px);
   aspect-ratio:3/2;
-  opacity:0;
-  transition:transform 1.25s cubic-bezier(.22,.9,.3,1), opacity .9s ease;
+  z-index:1;
   will-change:transform,opacity;
 }
-.sp-flag--l{left:max(-19vw,-230px);transform:translateY(-34%) rotate(-7deg);transform-origin:center right}
-.sp-flag--r{right:max(-19vw,-230px);transform:translateY(-34%) rotate(7deg) scaleX(-1);transform-origin:center left}
-.is-go .sp-flag--l{transform:translateY(-4%) rotate(-4deg);opacity:1;transition-delay:.7s}
-.is-go .sp-flag--r{transform:translateY(-4%) rotate(4deg);opacity:1;transition-delay:.7s}
+.sp-flag--l{
+  left:max(-12vw,-140px);
+  transform:translate(-40%,-10%) rotate(-9deg) scale(.95);
+  transform-origin:50% 55%;
+  opacity:0;
+  transition:transform 1s cubic-bezier(.16,.82,.28,1) .12s, opacity .5s ease .12s;
+}
+.sp-flag--r{
+  right:max(-12vw,-140px);
+  transform:translate(40%,-10%) rotate(9deg) scale(.95) scaleX(-1);
+  transform-origin:50% 55%;
+  opacity:0;
+  transition:transform 1s cubic-bezier(.16,.82,.28,1) .12s, opacity .5s ease .12s;
+}
+.is-go .sp-flag--l{transform:translate(0,0) rotate(-3.5deg);opacity:1}
+.is-go .sp-flag--r{transform:translate(0,0) rotate(3.5deg) scaleX(-1);opacity:1}
 .sp-flag .cloth{
   width:100%;
   height:100%;
   border-radius:4px;
+  overflow:hidden;
   box-shadow:0 26px 60px -18px rgba(0,0,0,.72), 0 0 0 1px rgba(233,213,163,.08);
   transform-style:preserve-3d;
-  animation:clothWave 2.9s ease-in-out infinite alternate;
-  overflow:hidden;
+  animation:clothWave 2.6s ease-in-out infinite alternate;
+  will-change:transform;
 }
-.sp-flag--r .cloth{animation-delay:-1.45s}
+.sp-flag--r .cloth{animation-delay:-1.3s}
 @keyframes clothWave{
   0%{transform:perspective(900px) rotateY(7deg) skewY(2.1deg) rotateZ(-.7deg)}
   100%{transform:perspective(900px) rotateY(-7deg) skewY(-2.1deg) rotateZ(.7deg)}
 }
-.cloth svg{width:100%;height:100%;display:block;filter:saturate(1.05)}
+.cloth img{width:100%;height:100%;display:block;filter:saturate(1.06)}
 .cloth::after{
   content:"";
   position:absolute;
   inset:0;
   background:linear-gradient(105deg,transparent 32%,rgba(255,255,255,.14) 46%,rgba(255,255,255,.02) 56%,transparent 68%);
-  animation:clothSheen 3.6s ease-in-out infinite;
+  animation:clothSheen 3.2s ease-in-out infinite;
 }
-.sp-flag--r .cloth::after{animation-delay:-1.8s}
+.sp-flag--r .cloth::after{animation-delay:-1.6s}
 @keyframes clothSheen{
   0%,18%{transform:translateX(-40%)}
   60%,100%{transform:translateX(40%)}
 }
 @media (max-width:760px){
-  .sp-flag{width:56vw;top:-30px;opacity:.9}
+  .sp-flag{width:52vw;top:22%}
+  .sp-flag--l{left:max(-10vw,-90px)}
+  .sp-flag--r{right:max(-10vw,-90px)}
 }
 
-/* crest + wordmark */
+/* crest: the real Afghan national emblem appearing */
 .sp-center{text-align:center;padding:0 6vw;max-width:900px;position:relative;z-index:2}
 .sp-crest{
-  width:min(126px,26vw);
-  margin:0 auto 20px;
-  transform:rotateX(78deg) translateY(46px) scale(.8);
+  width:min(128px,26vw);
+  margin:0 auto 22px;
   opacity:0;
-  transition:transform 1.15s cubic-bezier(.19,.9,.26,1), opacity .8s ease, filter 1.4s ease;
+  transform:rotateX(76deg) translateY(52px) scale(.72);
+  transform-origin:center bottom;
+  transition:transform .85s cubic-bezier(.18,.85,.3,1) .32s, opacity .6s ease .32s;
   filter:drop-shadow(0 0 0 rgba(216,178,100,0));
 }
 .is-go .sp-crest{
   transform:none;
   opacity:1;
-  animation:crestGlow 2.6s ease-in-out 1.25s infinite alternate;
+  animation:crestGlow 2.4s ease-in-out 1.1s infinite alternate;
 }
 @keyframes crestGlow{
-  from{filter:drop-shadow(0 0 10px rgba(216,178,100,.12))}
-  to{filter:drop-shadow(0 0 30px rgba(216,178,100,.38))}
+  from{filter:drop-shadow(0 0 12px rgba(216,178,100,.15))}
+  to{filter:drop-shadow(0 0 34px rgba(216,178,100,.45))}
 }
 .sp-word{
   font-family:var(--disp);
@@ -179,8 +198,8 @@ textarea,input{font:inherit}
   opacity:0;
   transform:translateY(.6em);
   filter:blur(7px);
-  transition:opacity .7s ease, transform .7s cubic-bezier(.2,.85,.25,1), filter .7s ease;
-  transition-delay:calc(.95s + var(--i)*.075s);
+  transition:opacity .5s ease, transform .5s cubic-bezier(.2,.85,.25,1), filter .5s ease;
+  transition-delay:calc(.62s + var(--i)*.036s);
 }
 .is-go .sp-word span{opacity:1;transform:none;filter:blur(0)}
 .sp-dari{
@@ -190,7 +209,7 @@ textarea,input{font:inherit}
   margin-top:8px;
   opacity:0;
   transform:translateY(12px);
-  transition:opacity .8s ease 1.75s, transform .8s ease 1.75s;
+  transition:opacity .65s ease .95s, transform .65s ease .95s;
 }
 .is-go .sp-dari{opacity:1;transform:none}
 .sp-sub{
@@ -201,7 +220,7 @@ textarea,input{font:inherit}
   text-indent:.42em;
   color:var(--ink-faint);
   opacity:0;
-  transition:opacity .8s ease 2s;
+  transition:opacity .7s ease 1.05s;
 }
 .is-go .sp-sub{opacity:1}
 .sp-ribbon{
@@ -220,7 +239,7 @@ textarea,input{font:inherit}
   background:linear-gradient(90deg,#141414 0%,#8c1d27 38%,#d8b264 52%,#d8b264 56%,#135233 88%);
   transform:scaleX(0);
   transform-origin:center;
-  transition:transform 1.05s cubic-bezier(.22,.9,.3,1) 2.15s;
+  transition:transform .95s cubic-bezier(.22,.9,.3,1) 1.15s;
 }
 .is-go .sp-ribbon i{transform:scaleX(1)}
 .sp-est{
@@ -230,11 +249,11 @@ textarea,input{font:inherit}
   text-indent:.34em;
   color:rgba(216,178,100,.55);
   opacity:0;
-  transition:opacity .8s ease 2.5s;
+  transition:opacity .7s ease 1.42s;
 }
 .is-go .sp-est{opacity:1}
-#splash.is-out .sp-center{transform:translateY(-26px) scale(.965);transition:transform .65s ease}
-.sp-center{transition:transform .65s ease}
+#splash.is-out .sp-center{transform:translateY(-26px) scale(.965);transition:transform .6s ease}
+.sp-center{transition:transform .6s ease}
 @media (prefers-reduced-motion:reduce){
   .sp-flag .cloth,.cloth::after,.sp-crest{animation:none!important}
 }
@@ -261,7 +280,7 @@ textarea,input{font:inherit}
   padding-bottom:10px;
 }
 .nav-logo{display:flex;align-items:center;gap:12px;min-width:0}
-.nav-logo svg{height:44px;width:auto;flex:none}
+.nav-logo svg,.nav-logo .crest{height:44px;width:auto;flex:none}
 .nav-logo .nname{
   font-family:var(--disp);
   font-size:.98rem;
@@ -311,7 +330,7 @@ textarea,input{font:inherit}
 @media (max-width:900px){
   .nav-links,.nav-call{display:none}
   .nav-burger{display:flex}
-  .nav-logo svg{height:38px}
+  .nav-logo svg,.nav-logo .crest{height:38px}
 }
 .nav-panel{
   position:fixed;
@@ -430,10 +449,13 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
   font-weight:600;
   letter-spacing:.16em;
   color:var(--ink-soft);
-  border:1px solid var(--line);
+  border:1px solid var(--glass-brd);
   border-radius:99px;
   padding:8px 16px;
-  background:rgba(18,20,19,.5);
+  background:var(--glass-grad), rgba(18,20,19,.42);
+  -webkit-backdrop-filter:blur(14px) saturate(1.4);
+  backdrop-filter:blur(14px) saturate(1.4);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
 }
 .chip b{color:var(--gold-bright);font-weight:600}
 .scroll-cue{
@@ -466,14 +488,18 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
   position:relative;
   border-radius:var(--radius);
   overflow:hidden;
-  background:var(--glass);
-  border:1px solid var(--line);
-  -webkit-backdrop-filter:blur(10px);
-  backdrop-filter:blur(10px);
-  box-shadow:var(--shadow);
-  transition:transform .45s cubic-bezier(.2,.8,.25,1), border-color .35s ease;
+  background:var(--glass-grad), var(--glass);
+  border:1px solid var(--glass-brd);
+  -webkit-backdrop-filter:var(--glass-blur);
+  backdrop-filter:var(--glass-blur);
+  box-shadow:var(--shadow), inset 0 1px 0 rgba(255,255,255,.13), inset 0 0 26px rgba(216,178,100,.045);
+  transition:transform .45s cubic-bezier(.2,.8,.25,1), border-color .35s ease, box-shadow .35s ease;
 }
-.sig-card:hover{transform:translateY(-7px);border-color:var(--line-strong)}
+.sig-card:hover{
+  transform:translateY(-7px);
+  border-color:var(--glass-brd-str);
+  box-shadow:0 34px 70px -30px rgba(0,0,0,.8), 0 0 0 1px rgba(216,178,100,.14), inset 0 1px 0 rgba(255,255,255,.18), inset 0 0 30px rgba(216,178,100,.07);
+}
 .sig-card figure{position:relative;aspect-ratio:4/3.2;overflow:hidden}
 .sig-card figure img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.8,.25,1)}
 .sig-card:hover figure img{transform:scale(1.06)}
@@ -496,7 +522,13 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
   border-radius:99px;
   padding:6px 12px;
 }
-.sig-body{position:relative;z-index:2;padding:4px 20px 20px;margin-top:-42px}
+.sig-body{
+  position:relative;z-index:2;padding:4px 20px 20px;margin-top:-42px;
+  background:linear-gradient(180deg,rgba(255,255,255,.085),rgba(255,255,255,.015) 62%,rgba(216,178,100,.05));
+  -webkit-backdrop-filter:blur(15px) saturate(1.45);
+  backdrop-filter:blur(15px) saturate(1.45);
+  border-top:1px solid rgba(255,255,255,.12);
+}
 .sig-body .dari{font-family:"Amiri",serif;color:rgba(233,213,163,.55);font-size:1rem}
 .sig-body h3{font-family:var(--disp);color:var(--gold-bright);font-size:1.22rem;font-weight:600;margin:2px 0 6px}
 .sig-body p{font-size:.88rem;color:var(--ink-soft);min-height:3.4em}
@@ -525,22 +557,28 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
 @media (max-width:560px){.milestones{grid-template-columns:1fr}}
 .miles{
   display:flex;align-items:center;gap:12px;
-  border:1px solid var(--line);
-  background:var(--glass);
+  border:1px solid var(--glass-brd);
+  background:var(--glass-grad), rgba(20,22,21,.42);
+  -webkit-backdrop-filter:blur(18px) saturate(1.5);
+  backdrop-filter:blur(18px) saturate(1.5);
   border-radius:14px;
   padding:13px 16px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.1), 0 14px 30px -22px rgba(0,0,0,.8);
 }
 .miles svg{width:26px;height:26px;flex:none}
+.miles .crest{width:27px;height:27px;flex:none;border-radius:50%}
 .miles b{display:block;font-size:.86rem;color:var(--ink);font-weight:600}
 .miles span{font-size:.68rem;letter-spacing:.14em;color:var(--ink-faint)}
 .about-panel{
   position:relative;
   border-radius:26px;
-  border:1px solid var(--line);
-  background:linear-gradient(160deg,rgba(31,122,77,.14),rgba(22,24,23,.7) 34%,rgba(22,24,23,.75) 66%,rgba(168,39,49,.15));
+  border:1px solid var(--glass-brd);
+  background:var(--glass-grad), linear-gradient(160deg,rgba(31,122,77,.16),rgba(22,24,23,.62) 36%,rgba(22,24,23,.66) 66%,rgba(168,39,49,.16));
+  -webkit-backdrop-filter:var(--glass-blur);
+  backdrop-filter:var(--glass-blur);
   padding:clamp(28px,4vw,46px);
   text-align:center;
-  box-shadow:var(--shadow);
+  box-shadow:var(--shadow), inset 0 1px 0 rgba(255,255,255,.12), inset 0 0 34px rgba(216,178,100,.05);
   overflow:hidden;
 }
 .about-panel::before{
@@ -567,12 +605,12 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
 .visit-band{
   position:relative;
   border-radius:26px;
-  border:1px solid var(--line);
+  border:1px solid var(--glass-brd);
   overflow:hidden;
-  background:var(--glass-2);
-  -webkit-backdrop-filter:blur(12px);
-  backdrop-filter:blur(12px);
-  box-shadow:var(--shadow);
+  background:var(--glass-grad), var(--glass-2);
+  -webkit-backdrop-filter:var(--glass-blur);
+  backdrop-filter:var(--glass-blur);
+  box-shadow:var(--shadow), inset 0 1px 0 rgba(255,255,255,.12), inset 0 0 30px rgba(216,178,100,.045);
   display:grid;
   grid-template-columns:1.1fr .9fr;
 }
@@ -618,10 +656,13 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
   letter-spacing:.22em;
   text-indent:.22em;
   color:var(--gold-bright);
-  border:1px solid var(--line-strong);
+  border:1px solid var(--glass-brd);
   border-radius:99px;
   padding:7px 14px;
-  background:rgba(18,20,19,.6);
+  background:var(--glass-grad), rgba(18,20,19,.5);
+  -webkit-backdrop-filter:blur(12px) saturate(1.4);
+  backdrop-filter:blur(12px) saturate(1.4);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.1);
 }
 
 /* ============ FOOTER ============ */
@@ -640,7 +681,7 @@ footer::before{
 }
 .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px;margin-bottom:40px}
 @media (max-width:760px){.foot-grid{grid-template-columns:1fr;gap:28px}}
-.foot-brand svg{height:52px;width:auto;margin-bottom:14px}
+.foot-brand svg,.foot-brand .crest{height:52px;width:auto;margin-bottom:14px}
 .foot-brand p{color:var(--ink-faint);font-size:.86rem;max-width:300px}
 .foot-col h4{font-size:.68rem;letter-spacing:.34em;text-indent:.34em;color:var(--gold);margin-bottom:16px}
 .foot-col a,.foot-col span{display:block;color:var(--ink-soft);font-size:.88rem;padding:5px 0;transition:color .3s ease}
@@ -680,89 +721,18 @@ html.flat .hero{min-height:auto!important;padding:120px 0 60px}
 </head>
 <body>
 
-<!-- hidden crest symbol reused across page -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#e9d5a3"/><stop offset=".45" stop-color="#cfa858"/><stop offset="1" stop-color="#9a7733"/>
-    </linearGradient>
-    <g id="crest">
-      <circle cx="48" cy="48" r="46" fill="rgba(10,11,11,.92)"/>
-      <circle cx="48" cy="48" r="42.5" fill="none" stroke="url(#gGold)" stroke-width="1.6"/>
-      <circle cx="48" cy="48" r="35.5" fill="none" stroke="#b98f43" stroke-width="2.4" stroke-dasharray="2.6 6.4" stroke-linecap="round" opacity=".9"/>
-      <g stroke="#d8b264" stroke-width="1.6" stroke-linecap="round" opacity=".9">
-        <path d="M48 13.6v5"/><path d="M48 13.6v5" transform="rotate(42 48 48)"/><path d="M48 13.6v5" transform="rotate(-42 48 48)"/><path d="M48 13.6v5" transform="rotate(138 48 48)"/><path d="M48 13.6v5" transform="rotate(-138 48 48)"/>
-      </g>
-      <g fill="#e9d5a3">
-        <path d="M33 22 C36 15.5 42 15.5 45 22 C42 20.5 40.5 18.5 39 18.5 C37.5 18.5 36 20.5 33 22 Z"/>
-        <path d="M52 17 C54 12.5 58.5 12.5 60.5 17 C58.5 16 57.5 14.5 56.2 14.5 C55 14.5 54 16 52 17 Z" fill="#cfa858"/>
-      </g>
-      <g stroke="#cfa858" stroke-width="1.8" stroke-linecap="round">
-        <path d="M25.5 34v26"/><path d="M70.5 34v26"/>
-      </g>
-      <path d="M25.5 34 L18 38.5 L25.5 43 Z" fill="#e9d5a3"/>
-      <path d="M70.5 34 L78 38.5 L70.5 43 Z" fill="#e9d5a3"/>
-      <path d="M33 62 V46 Q33 31.5 48 25.5 Q63 31.5 63 46 V62" fill="none" stroke="url(#gGold)" stroke-width="3.4" stroke-linecap="round"/>
-      <path d="M38 62 V47 Q38 36.5 48 32.5 Q58 36.5 58 47 V62" fill="rgba(233,213,163,.16)" stroke="#e9d5a3" stroke-width="1.4"/>
-      <g fill="#cfa858">
-        <rect x="63.5" y="56" width="7" height="3.4" rx=".8"/>
-        <rect x="63.5" y="50.5" width="7" height="3.4" rx=".8"/>
-        <rect x="63.5" y="45" width="7" height="3.4" rx=".8"/>
-      </g>
-      <path d="M23 62 H73" stroke="#d8b264" stroke-width="1.8" stroke-linecap="round"/>
-    </g>
-  </defs>
-</svg>
-
 <!-- ============ SPLASH ============ -->
 <div id="splash" aria-hidden="true">
-  <!-- corner flags: two old Afghan tricolors, half emerged -->
-  <div class="sp-flag sp-flag--l" aria-hidden="true">
-    <div class="cloth">
-      <svg viewBox="0 0 300 200" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="fcl" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stop-color="#fff" stop-opacity=".12"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/>
-          </linearGradient>
-        </defs>
-        <rect width="100" height="200" fill="#151515"/>
-        <rect x="100" width="100" height="200" fill="#8c1d27"/>
-        <rect x="200" width="100" height="200" fill="#135233"/>
-        <rect width="300" height="200" fill="url(#fcl)"/>
-        <g transform="translate(150 100) scale(.34) translate(-48 -48)" fill="none" stroke="#f3ead6" stroke-width="4">
-          <path d="M48 13.6v5" stroke-linecap="round"/>
-          <path d="M33 62 V46 Q33 31.5 48 25.5 Q63 31.5 63 46 V62" stroke-linecap="round" stroke-width="4.6"/>
-          <path d="M38 62 V47 Q38 36.5 48 32.5 Q58 36.5 58 47 V62" stroke-width="2.4"/>
-          <path d="M25.5 34v26 M70.5 34v26" stroke-linecap="round" stroke-width="3"/>
-          <path d="M25.5 34 L18 38.5 L25.5 43 Z M70.5 34 L78 38.5 L70.5 43 Z" fill="#f3ead6" stroke="none"/>
-          <path d="M23 62 H73" stroke-linecap="round" stroke-width="3.4"/>
-          <circle cx="48" cy="48" r="42" stroke-dasharray="3 8" stroke-width="3.4" opacity=".75"/>
-        </g>
-      </svg>
-    </div>
+  <!-- two real Afghan tricolor flags entering from opposite sides of the screen, waving -->
+  <div class="sp-flag sp-row sp-flag--l">
+    <div class="cloth"><img src="assets/flag-afghan.svg" alt="" draggable="false"></div>
   </div>
-  <div class="sp-flag sp-flag--r" aria-hidden="true">
-    <div class="cloth">
-      <svg viewBox="0 0 300 200" preserveAspectRatio="none">
-        <rect width="100" height="200" fill="#151515"/>
-        <rect x="100" width="100" height="200" fill="#8c1d27"/>
-        <rect x="200" width="100" height="200" fill="#135233"/>
-        <rect width="300" height="200" fill="url(#fcl)"/>
-        <g transform="translate(150 100) scale(.34) translate(-48 -48)" fill="none" stroke="#f3ead6" stroke-width="4">
-          <path d="M48 13.6v5" stroke-linecap="round"/>
-          <path d="M33 62 V46 Q33 31.5 48 25.5 Q63 31.5 63 46 V62" stroke-linecap="round" stroke-width="4.6"/>
-          <path d="M38 62 V47 Q38 36.5 48 32.5 Q58 36.5 58 47 V62" stroke-width="2.4"/>
-          <path d="M25.5 34v26 M70.5 34v26" stroke-linecap="round" stroke-width="3"/>
-          <path d="M25.5 34 L18 38.5 L25.5 43 Z M70.5 34 L78 38.5 L70.5 43 Z" fill="#f3ead6" stroke="none"/>
-          <path d="M23 62 H73" stroke-linecap="round" stroke-width="3.4"/>
-          <circle cx="48" cy="48" r="42" stroke-dasharray="3 8" stroke-width="3.4" opacity=".75"/>
-        </g>
-      </svg>
-    </div>
+  <div class="sp-flag sp-row sp-flag--r">
+    <div class="cloth"><img src="assets/flag-afghan.svg" alt="" draggable="false"></div>
   </div>
 
   <div class="sp-center">
-    <div class="sp-crest"><svg viewBox="0 0 96 96" style="width:100%"><use href="#crest"/></svg></div>
+    <div class="sp-crest"><img src="assets/emblem-white.svg" alt="Afghan national emblem" draggable="false"></div>
     <div class="sp-word" aria-label="AL ABABEEL"><span style="--i:0">A</span><span style="--i:1">L</span><span style="--i:2">&nbsp;</span><span style="--i:3">A</span><span style="--i:4">B</span><span style="--i:5">A</span><span style="--i:6">B</span><span style="--i:7">E</span><span style="--i:8">E</span><span style="--i:9">L</span></div>
     <p class="sp-dari">الابابيل</p>
     <p class="sp-sub">AFGHAN&nbsp;RESTAURANT&nbsp;·&nbsp;DUBAI</p>
@@ -774,7 +744,7 @@ html.flat .hero{min-height:auto!important;padding:120px 0 60px}
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <a class="nav-logo" href="index.html" aria-label="Al Ababeel home">
-    <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+    <img class="crest" src="assets/emblem-gold.svg" alt="Al Ababeel emblem">
     <span class="nname">AL&nbsp;ABABEEL<span class="nsub">AFGHAN&nbsp;RESTAURANT</span></span>
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -804,7 +774,7 @@ html.flat .hero{min-height:auto!important;padding:120px 0 60px}
 <main id="home">
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="hero-mark" aria-hidden="true"><svg viewBox="0 0 96 96" style="width:100%"><use href="#crest"/></svg></div>
+    <div class="hero-mark" aria-hidden="true"><img src="assets/emblem-gold.svg" alt=""></div>
     <div class="swallow sw-a" aria-hidden="true"><svg viewBox="0 0 96 40"><path d="M6 30 C22 4 52 0 88 8 C66 10 56 16 50 24 C34 34 16 34 6 30 Z" fill="none" stroke="#e9d5a3" stroke-width="2.5"/></svg></div>
     <div class="swallow sw-b" aria-hidden="true"><svg viewBox="0 0 96 40"><path d="M6 30 C22 4 52 0 88 8 C66 10 56 16 50 24 C34 34 16 34 6 30 Z" fill="none" stroke="#e9d5a3" stroke-width="2.5"/></svg></div>
     <div class="wrap hero-wrap">
@@ -915,7 +885,7 @@ html.flat .hero{min-height:auto!important;padding:120px 0 60px}
         <p class="reveal">This is Afghan hospitality — <strong>mehmani</strong>: the table never runs empty, the naan keeps coming, and you are somebody's guest here, not a table number.</p>
         <div class="milestones reveal">
           <div class="miles">
-            <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+            <img class="crest" src="assets/emblem-gold.svg" alt="Al Ababeel emblem">
             <div><b>Established August 2026</b><span>NEWLY OPENED</span></div>
           </div>
           <div class="miles">
@@ -933,7 +903,7 @@ html.flat .hero{min-height:auto!important;padding:120px 0 60px}
         </div>
       </div>
       <aside class="about-panel reveal" aria-label="Since August 2026">
-        <div class="crest-big"><svg viewBox="0 0 96 96" style="width:100%"><use href="#crest"/></svg></div>
+        <div class="crest-big"><img src="assets/emblem-gold.svg" alt="Afghan national emblem" style="width:100%"></div>
         <p class="dari-big">ابابیل</p>
         <p class="est-line">ESTABLISHED · AUGUST 2026</p>
         <blockquote>The ababeel are the swallow flock that flies together — one wing, one sky. One kitchen, one family, one table for all of Dubai.</blockquote>
@@ -978,7 +948,7 @@ html.flat .hero{min-height:auto!important;padding:120px 0 60px}
     <div class="wrap">
       <div class="foot-grid">
         <div class="foot-brand">
-          <svg viewBox="0 0 96 96"><use href="#crest"/></svg>
+          <img class="crest" src="assets/emblem-gold.svg" alt="Al Ababeel emblem">
           <p><b style="color:var(--gold-bright)">AL ABABEEL</b> — Afghan restaurant in Saih Shuaib 2, Dubai. Charcoal fire, family recipes, established August 2026.</p>
         </div>
         <div class="foot-col">
@@ -1009,22 +979,22 @@ html.flat .hero{min-height:auto!important;padding:120px 0 60px}
   var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var nosplash=/[?&]nosplash/.test(location.search);
   var hold=/[?&]splashhold/.test(location.search);
-  var seen=false;
-  try{seen=!!sessionStorage.getItem('aab_splash_v1')}catch(e){}
   var start=function(){
     html.classList.remove('loading');
+    var removeAt=2700;
     if(hold){splash.classList.add('is-go');document.body.classList.add('revealed');return}
-    if(!reduced&&!seen&&!nosplash){
-      try{sessionStorage.setItem('aab_splash_v1','1')}catch(e){}
+    if(!reduced&&!nosplash){
+      /* 2-second splash, every visit */
       splash.classList.add('is-go');
-      setTimeout(function(){splash.classList.add('is-out')},4150);
+      setTimeout(function(){splash.classList.add('is-out')},2050);
     }else{
       splash.classList.add('is-out');
+      removeAt=700;
     }
     setTimeout(function(){
       splash.remove();
       document.body.classList.add('revealed');
-    },660);
+    },removeAt);
   };
   var html=document.documentElement;
   if(document.readyState==='complete'||document.readyState==='interactive'){requestAnimationFrame(start)}
