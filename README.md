@@ -9,7 +9,7 @@ A website for **Al Ababeel Afghan Restaurant**, a newly opened Afghan restaurant
 | Page | Contents |
 |---|---|
 | `index.html` | Home — animated splash screen, hero, four signature dishes (Kabuli Pulao, Shinwari Karahi, Mantu, Mix BBQ), our story, visit band |
-| `menu.html` | Segmented interactive menu — the menu is served in meal-time segments (Segment 01: Breakfast, 18 nashta dishes · Segment 02: Karahi, 9 wok dishes — all with local stock photos) plus a big search bar living in the hero, a sticky segment rail, and upcoming-segment cards that keep `menu.html#bbq` / `#karahi` / `#rice` / `#classics` deep-links alive |
+| `menu.html` | Segmented interactive menu — the menu is served in meal-time segments (Segment 01: Breakfast, 18 nashta dishes · Segment 02: Karahi, 9 wok dishes · Segment 03: Handis, 5 clay-pot dishes — all with local stock photos) plus a big search bar living in the hero, a sticky segment rail, and upcoming-segment cards that keep `menu.html#bbq` / `#karahi` / `#handis` / `#rice` / `#classics` deep-links alive |
 | `visit.html` | Visit us — Google Map embed, phone, WhatsApp, directions, dine-in / takeaway cards |
 
 ## Design
@@ -17,7 +17,7 @@ A website for **Al Ababeel Afghan Restaurant**, a newly opened Afghan restaurant
 - **Tricolor night theme** — Afghan flag gradient (black / green / red) washed at 135° over a near-black base, with gold accents (`#d8b264`), green (`#1f7a4d`) and red (`#a82731`). Tri-line flag dividers separate sections.
 - **Original logo** — a mihrab-arch gate crest with minbar, twin pennants, wheat wreath and swallows (`assets/logo.svg`, inlined as `<symbol id="crest">` on every page). No third-party brand assets.
 - **Splash screen** — the crest unveils with a light pulse on first visit of the browser session (`sessionStorage`) while the wordmark, tricolor ribbon and two waving half-flags from the top corners animate through; then the site reveals. Skipped when `prefers-reduced-motion` is on, or on later visits in the same session.
-- **Segmented menu** — Segment 01 (Breakfast, 18 real nashta dishes) and Segment 02 (Karahi, 9 dishes: shinwari, Lahori, house and white karahis) are fully built. Each dish has its own downloaded stock photo (`assets/food/`, sourced from Wikimedia Commons — credit map inside `menu.html`), rendered from a JS data table with staggered entrance. A big search bar sits in the hero (finds dishes across name/Dari/description across both segments and hides sections with no matches), and a sticky segment rail jumps between segments. Old category deep-links (`#bbq`, `#karahi`, `#rice`, `#classics`) resolve to the matching segment (live) or upcoming-segment card.
+- **Segmented menu** — Segment 01 (Breakfast, 18 real nashta dishes), Segment 02 (Karahi, 9 dishes: shinwari, Lahori, house and white karahis) and Segment 03 (Handis, 5 dishes: brain masala, chicken, white, jalfrezi and Kashmiri handis) are fully built. Each dish has its own downloaded stock photo (`assets/food/`, sourced from Wikimedia Commons — credit map inside `menu.html`), rendered from a JS data table with staggered entrance. A big search bar sits in the hero (finds dishes across name/Dari/description across all segments and hides sections with no matches), and a sticky segment rail jumps between segments. Old category deep-links (`#bbq`, `#karahi`, `#handis`, `#rice`, `#classics`) resolve to the matching segment (live) or upcoming-segment card.
 
 ## Development / test URL hooks
 
