@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu — Al Ababeel Restaurant Dubai · Breakfast · Karahi · Handis · AED</title>
-<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Saih Shuaib 2, Dubai. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis.">
+<title>Menu — Al Ababeel Restaurant Dubai · Breakfast · Karahi · Handis · Veg · AED</title>
+<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Saih Shuaib 2, Dubai. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis. Segment 04 — Veg: daal tadka, mash fry, mix vegetable, chana fry, anda tikki, palak paneer, bhindi, anda chaney, daal gosht and palak gosht.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta property="og:title" content="Al Ababeel Restaurant — The Full Menu, Segment by Segment">
 <meta property="og:type" content="website">
-<meta property="og:description" content="Segment 01 — Breakfast, Segment 02 — Karahi and Segment 03 — Handis: Lahori nashta, wok-cooked karahis and sealed clay pots on live fire. Saih Shuaib 2, Dubai.">
+<meta property="og:description" content="Segment 01 — Breakfast, Segment 02 — Karahi, Segment 03 — Handis and Segment 04 — Veg: Lahori nashta, wok-cooked karahis, sealed clay pots and the daal house. Saih Shuaib 2, Dubai.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&auto=format&fit=crop&q=75">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +52,18 @@
   chicken-white-handi.jpg ← File:Yakhni style chicken.jpg
   chicken-jalfrezi.jpg ← File:Chicken jalfrezi, Bombay potato and naan.jpg
   kashmiri-handi.jpg ← File:Mutton rogan Josh (kashmiri cuisine).jpg
+
+  Segment 04 — Veg (lahori-chaney.jpg reused from Segment 01):
+  daal-tadka.jpg ← File:Daal Tadka with Steamed Rice.jpg
+  daal-mash-fry.jpg ← File:Dal Fry masala.jpg
+  mix-vegetable.jpg ← File:Mixed Vegetable Curry.JPG
+  daal-chana-fry.jpg ← File:Dal Chana Tarka.JPG
+  anda-tikki-masala.jpg ← File:Egg Masala.jpg
+  palak-paneer.jpg ← File:Palak Paneer curry on plate.jpg
+  bhindi-masala.jpg ← File:Bhindi Masala.jpg
+  anda-chaney.jpg ← File:Channa.jpg (chana pot stand-in; egg not visible)
+  daal-gosht.jpg ← File:Daal Gosht By fatima.jpg
+  palak-gosht.jpg ← File:Palak Chicken.jpg (greens+meat; named for the chicken school)
 -->
 <style>
 :root{
@@ -450,11 +462,11 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
       <div class="mhrow">
         <div>
           <h1>The Menu <span class="dari" style="font-size:.6em">منو</span></h1>
-          <p class="sub">Not one long list — the menu is served in <b style="color:var(--gold-bright)">segments</b>, meal by meal, the way the kitchen actually cooks it. Segment One is breakfast; Segment Two is the karahi wok; Segment Three is the sealed clay pots.</p>
+          <p class="sub">Not one long list — the menu is served in <b style="color:var(--gold-bright)">segments</b>, meal by meal, the way the kitchen actually cooks it. Segment One is breakfast; Segment Two is the karahi wok; Segment Three is the sealed clay pots; Segment Four is the daal house.</p>
         </div>
         <div class="mh-chips">
-          <span class="chip">Segments <b>01 Breakfast · 02 Karahi · 03 Handis</b></span>
-          <span class="chip"><b id="dishCount">32</b> dishes</span>
+          <span class="chip">Segments <b>01 Breakfast · 02 Karahi · 03 Handis · 04 Veg</b></span>
+          <span class="chip"><b id="dishCount">43</b> dishes</span>
           <span class="chip"><b>AED</b> · priced soon</span>
         </div>
       </div>
@@ -470,6 +482,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
           <span>jump to</span>
           <button data-term="karahi">Karahi</button>
           <button data-term="handi">Handi</button>
+          <button data-term="daal">Daal</button>
           <button data-term="nihari">Beef Nihari</button>
           <button data-term="paratha">Paratha</button>
           <button data-term="chai">Chai</button>
@@ -536,9 +549,24 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
       <div class="dish-grid" id="out-handis"></div>
     </section>
 
+    <section class="wrap seg" id="veg" aria-labelledby="segTitle4">
+      <div class="seg-head">
+        <div class="seg-num" aria-hidden="true">04</div>
+        <div class="seg-words">
+          <h2 id="segTitle4">Veg <span class="dari">سبزی</span></h2>
+          <p class="seg-note">The section that never leaves the stove — daals soaked overnight, sabzi bought whole each morning, and the egg pans that keep the lighter plates honest. Cooked through, not churned out; every bowl here is cheap the way food should be cheap.</p>
+        </div>
+        <div class="seg-meta">
+          <span class="cnt" id="cnt-veg">11 dishes</span>
+          <span class="live" id="segLive4"><i aria-hidden="true"></i> Live segment — others follow below</span>
+        </div>
+      </div>
+      <p class="results-lbl" id="lbl-veg" aria-live="polite"></p>
+      <div class="dish-grid" id="out-veg"></div>
+    </section>
     <section class="wrap next" id="next" aria-labelledby="nextTitle">
       <div class="seg-head">
-        <div class="seg-num" aria-hidden="true">04+</div>
+        <div class="seg-num" aria-hidden="true">05+</div>
         <div class="seg-words">
           <h2 id="nextTitle">More on the stove</h2>
           <p class="seg-note">The next segments are written up and being priced with the family right now. One call and we'll read the whole menu to you: <a href="tel:+971558664409" style="color:var(--gold-bright)">+971 55 866 4409</a>.</p>
@@ -546,21 +574,21 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
       </div>
       <div class="next-grid">
         <article class="ncard" id="bbq">
-          <span class="nnum">04</span>
+          <span class="nnum">05</span>
           <h3>Charcoal Kababs</h3>
           <span class="dari ndari">کباب</span>
           <span class="soon">SOON</span>
           <p>Chopan kabab, seekh, tikka — one charcoal bed, smoked daily from four in the afternoon.</p>
         </article>
         <article class="ncard" id="rice">
-          <span class="nnum">05</span>
+          <span class="nnum">06</span>
           <h3>Rice & Pulao</h3>
           <span class="dari ndari">پلو</span>
           <span class="soon">PRICING</span>
           <p>Domed-lid steaming until every grain stands alone. Priced in AED first.</p>
         </article>
         <article class="ncard" id="classics">
-          <span class="nnum">06</span>
+          <span class="nnum">07</span>
           <h3>Mantu & Old Hands</h3>
           <span class="dari ndari">منتو</span>
           <span class="soon">SOON</span>
@@ -650,12 +678,26 @@ const B3=[
   ['chicken-jalfrezi','Chicken Jalfrezi','چکن جلفریزی','Capsicum, onion and tomato stir-fried loud, chicken tossed back through the sizzle — the brightest pot we cook.'],
   ['kashmiri-handi','Kashmiri Handi (With Bone)','کشمیری ہانڈی','Mutton on the bone turned slow in Kashmiri chillies — deep red, soft-spoken heat — sealed in the handi until the marrow gives.']
 ];
+const B4=[
+  ['daal-tadka','Daal Tadka','دال تڑکا','Yellow daal simmered soft, then ghee-soaked at the last second — cumin, garlic and red chilli cracking over the top as it falls into the bowl.'],
+  ['daal-mash-fry','Daal Mash Fry','دال ماش فرائی','Mash ki daal fried hard in the karahi — dry, glossy, onion-browned, the daal that dhabas are argued over.'],
+  ['mix-vegetable','Mix Vegetable','مخلوط سبزی','Cauliflower, potato, carrot, peas and capsicum braised in one gravy — whatever the mandi trusted that morning, chopped and cooked through.'],
+  ['daal-chana-fry','Daal Chana Fry','دال چنہ فرائی','Split chana fried with onion, tomato and whole spice until the grains go soft-separated and slow.'],
+  ['anda-tikki-masala','Anda Tikki Masala','انڈا ٹکی مصالحہ','Egg patties fried golden, folded back into a dark masala — the street-cart plate brought home to the section of the kitchen.'],
+  ['lahori-chaney','Lahori Chaney','لاہوری چنے','White chickpeas napped in a dark onion gravy — the roadside anthem of the Walled City, easy weight all day long.'],
+  ['palak-paneer','Palak Paneer','پالک پنیر','Palak cooked down until the bitter green in it is gone entirely, paneer cubes folded in right before it leaves the pot.'],
+  ['bhindi-masala','Bhindi Masala','بھنڈی مصالحہ','Okra split-slit and dry-cooked with onion and raw mango — no slime, all texture.'],
+  ['anda-chaney','Anda Chaney','انڈا چنے','Eggs folded in arms around the chana pot — double weight, one bowl, a dinner built on the cheapest things done slowly.'],
+  ['daal-gosht','Daal Gosht','دال گوشت','Daal with mutton simmered inside it until the meat gives up — lentils that eat like a full curry.'],
+  ['palak-gosht','Palak Gosht (Chicken / Mutton)','پالک گوشت','The green pot with your choice pulled from it — chicken or mutton stewed down under a heavy bed of palak.']
+];
 const SEGS=[
   {id:'breakfast',num:'01',name:'Breakfast',dari:'ناشتہ'},
   {id:'karahi',num:'02',name:'Karahi',dari:'کڑاہی'},
-  {id:'handis',num:'03',name:'Handis',dari:'ہانڈی'}
+  {id:'handis',num:'03',name:'Handis',dari:'ہانڈی'},
+  {id:'veg',num:'04',name:'Veg',dari:'سبزی'}
 ];
-const MENU=[{seg:SEGS[0],items:B1},{seg:SEGS[1],items:B2},{seg:SEGS[2],items:B3}].map(function(g){
+const MENU=[{seg:SEGS[0],items:B1},{seg:SEGS[1],items:B2},{seg:SEGS[2],items:B3},{seg:SEGS[3],items:B4}].map(function(g){
   return{seg:g.seg,items:g.items.map(function(d,i){
     return{i:i,img:F+d[0]+'.jpg',name:d[1],dari:d[2],desc:d[3],price:'—',seg:g.seg};
   })};
@@ -663,9 +705,9 @@ const MENU=[{seg:SEGS[0],items:B1},{seg:SEGS[1],items:B2},{seg:SEGS[2],items:B3}
 
 /* upcoming segments — ids keep old deep-links (#bbq,#rice,#classics) working */
 const SOON=[
-  {id:'#bbq',num:'04',name:'Charcoal Kababs'},
-  {id:'#rice',num:'05',name:'Rice & Pulao'},
-  {id:'#classics',num:'06',name:'Mantu & Old Hands'}
+  {id:'#bbq',num:'05',name:'Charcoal Kababs'},
+  {id:'#rice',num:'06',name:'Rice & Pulao'},
+  {id:'#classics',num:'07',name:'Mantu & Old Hands'}
 ];
 
 /* ─────────── RENDER ─────────── */
@@ -776,7 +818,7 @@ function firstSeg(term){
 /* deep-link ?seg= or #seg */
 (function(){
   var h=location.hash.replace('#','');
-  if(h&&['breakfast','karahi','handis','next','bbq','rice','classics'].indexOf(h)>-1){
+  if(h&&['breakfast','karahi','handis','veg','next','bbq','rice','classics'].indexOf(h)>-1){
     setTimeout(function(){
       var el=document.getElementById(h);
       if(el)el.scrollIntoView({block:'start'});
