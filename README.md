@@ -9,7 +9,7 @@ A website for **Al Ababeel Afghan Restaurant**, a newly opened Afghan restaurant
 | Page | Contents |
 |---|---|
 | `index.html` | Home — animated splash screen, hero, four signature dishes (Kabuli Pulao, Shinwari Karahi, Mantu, Mix BBQ), our story, visit band |
-| `menu.html` | Full interactive menu — 10 categories / ~68 dishes with sticky category tabs, live search, deep-links and dish photos |
+| `menu.html` | Segmented interactive menu — the menu is served in meal-time segments (Segment 01: Breakfast, 18 nashta dishes · Segment 02: Karahi, 9 wok dishes — all with local stock photos) plus a big search bar living in the hero, a sticky segment rail, and upcoming-segment cards that keep `menu.html#bbq` / `#karahi` / `#rice` / `#classics` deep-links alive |
 | `visit.html` | Visit us — Google Map embed, phone, WhatsApp, directions, dine-in / takeaway cards |
 
 ## Design
@@ -17,7 +17,7 @@ A website for **Al Ababeel Afghan Restaurant**, a newly opened Afghan restaurant
 - **Tricolor night theme** — Afghan flag gradient (black / green / red) washed at 135° over a near-black base, with gold accents (`#d8b264`), green (`#1f7a4d`) and red (`#a82731`). Tri-line flag dividers separate sections.
 - **Original logo** — a mihrab-arch gate crest with minbar, twin pennants, wheat wreath and swallows (`assets/logo.svg`, inlined as `<symbol id="crest">` on every page). No third-party brand assets.
 - **Splash screen** — the crest unveils with a light pulse on first visit of the browser session (`sessionStorage`) while the wordmark, tricolor ribbon and two waving half-flags from the top corners animate through; then the site reveals. Skipped when `prefers-reduced-motion` is on, or on later visits in the same session.
-- **Interactive menu** — dishes are rendered from a JS data table; the sticky tab strip filters by category with per-category counts, a search box filters live, and `menu.html#rice` style deep-links jump to a category.
+- **Segmented menu** — Segment 01 (Breakfast, 18 real nashta dishes) and Segment 02 (Karahi, 9 dishes: shinwari, Lahori, house and white karahis) are fully built. Each dish has its own downloaded stock photo (`assets/food/`, sourced from Wikimedia Commons — credit map inside `menu.html`), rendered from a JS data table with staggered entrance. A big search bar sits in the hero (finds dishes across name/Dari/description across both segments and hides sections with no matches), and a sticky segment rail jumps between segments. Old category deep-links (`#bbq`, `#karahi`, `#rice`, `#classics`) resolve to the matching segment (live) or upcoming-segment card.
 
 ## Development / test URL hooks
 
@@ -30,7 +30,7 @@ Query parameters understood by the pages (inert for normal visitors):
 
 ## Spotlight: pricing honesty
 
-The restaurant is brand new. Only the **Rice & Pulao** section carries real AED prices (supplied by the family); every other dish shows a dashed **AED —** chip with an explanatory note bar and a phone call-to-action, until the family finalises the rest of the pricing.
+The restaurant is brand new. No dish on the menu page currently carries a real AED price: dishes show a dashed **AED —** chip with an explanatory phone call-to-action until the family finalises pricing, and the Rice & Pulao segment (whose pricing the family has confirmed) is displayed as an upcoming "PRICING" segment rather than a half-empty list.
 
 ## Content integrity
 
