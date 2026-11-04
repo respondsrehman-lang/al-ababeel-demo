@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu — Al Ababeel Restaurant Dubai · Breakfast · Karahi · Handis · Veg · BBQ · AED</title>
-<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Saih Shuaib 2, Dubai. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis. Segment 04 — Veg: daal tadka, mash fry, mix vegetable, chana fry, anda tikki, palak paneer, bhindi, anda chaney, daal gosht and palak gosht. Segment 05 — BBQ & Charcoal: special BBQ mutton seekh kebab, chicken seekh kebab, malai boti, tikka boti, charsi tikka, afghani tikka and the charcoal chicken pans.">
+<title>Menu — Al Ababeel Restaurant Dubai · Breakfast · Karahi · Handis · Veg · BBQ · Rice · AED</title>
+<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Saih Shuaib 2, Dubai. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis. Segment 04 — Veg: daal tadka, mash fry, mix vegetable, chana fry, anda tikki, palak paneer, bhindi, anda chaney, daal gosht and palak gosht. Segment 05 — BBQ & Charcoal: special BBQ mutton seekh kebab, chicken seekh kebab, malai boti, tikka boti, charsi tikka, afghani tikka and the charcoal chicken pans. Segment 06 — Rice: chicken biryani, kabuli pulao, fish biryani, seekh kabab biryani, reshmi kabab biryani, special mix grill biryani and chicken tikka biryani — sealed pot rice, char-grill on top.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta property="og:title" content="Al Ababeel Restaurant — The Full Menu, Segment by Segment">
 <meta property="og:type" content="website">
-<meta property="og:description" content="Segment 01 — Breakfast, Segment 02 — Karahi, Segment 03 — Handis, Segment 04 — Veg and Segment 05 — BBQ & Charcoal: Lahori nashta, wok-cooked karahis, sealed clay pots, the daal house and the charcoal grill. Saih Shuaib 2, Dubai.">
+<meta property="og:description" content="Segment 01 — Breakfast, Segment 02 — Karahi, Segment 03 — Handis, Segment 04 — Veg, Segment 05 — BBQ & Charcoal and Segment 06 — Rice: Lahori nashta, wok-cooked karahis, sealed clay pots, the daal house, the charcoal grill and the dum rice pots. Saih Shuaib 2, Dubai.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&auto=format&fit=crop&q=75">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,6 +76,15 @@
   pepper-chicken-charcoal.jpg ← Unsplash photo 1532550907401-a500c9a57435
   green-chilli-chicken-charcoal.jpg ← Unsplash photo 1567188040759-fb8a883dc6d8
   chicken-charcoal.jpg ← Unsplash photo 1598515214211-89d3c73ae83b
+
+  Segment 06 — Rice (all Wikimedia Commons, free-license):
+  chicken-biryani.jpg ← File:Chicken Hyderabadi Biryani.JPG (by Dheerajk88, Wiki Loves Food 2015)
+  kabuli-pulao.jpg ← File:Qabuli palao (rice with carrots & raisins) with lamb - Afghanistan - 04272008.jpg
+  fish-biryani.jpg ← File:Pakistani Fish Biryani.JPG
+  seekh-kabab-biryani.jpg ← File:Biryani KebabB.jpg
+  reshmi-kabab-biryani.jpg ← File:Chicken reshmi kebabs.jpg (kebab stand-in; biryani bed not shown)
+  mix-grill-biryani.jpg ← File:Iraqi Mixed Grill Platter with Traditional Accompaniments.jpg (mixed-grill platter stand-in; biryani bed not shown)
+  chicken-tikka-biryani.jpg ← File:Chicken tikka Biriyani.jpg
 -->
 <style>
 :root{
@@ -275,6 +284,7 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
 .rail .wrap{display:flex;align-items:center;gap:10px;overflow-x:auto;scrollbar-width:none}
 .rail .wrap::-webkit-scrollbar{display:none}
 .spill{
+  position:relative;
   flex:none;display:inline-flex;align-items:center;gap:9px;
   font-size:.74rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
   color:var(--ink-soft);
@@ -288,9 +298,32 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
 .spill:hover{border-color:var(--glass-brd-str);color:var(--ink)}
 .spill.on{
   color:#120e04;background:linear-gradient(135deg,#ecd9a8,#d8b264 55%,#a9832f);
-  border-color:transparent;font-weight:600;
+  border-color:rgba(236,217,168,.55);font-weight:600;
+  box-shadow:0 10px 30px -10px rgba(216,178,100,.55),0 0 26px -4px rgba(216,178,100,.42),inset 0 1px 0 rgba(255,255,255,.4);
+  animation:segGlow 2.6s ease-in-out infinite;
 }
 .spill.on b{color:#120e04}
+@keyframes segGlow{50%{box-shadow:0 14px 44px -10px rgba(216,178,100,.82),0 0 44px 0 rgba(216,178,100,.52),inset 0 1px 0 rgba(255,255,255,.55)}}
+/* unchosen live segments: stay dark — the only life is one continuous white light riding the border, inviting the tap */
+.spill.idle{border-color:rgba(255,255,255,.09);box-shadow:inset 0 1px 0 rgba(255,255,255,.07)}
+.spill.idle:hover{border-color:rgba(255,255,255,.32);color:var(--ink)}
+.spill.idle b{color:rgba(216,178,100,.62)}
+@property --segspin{syntax:"<angle>";inherits:false;initial-value:0deg}
+.spill.idle::before{
+  content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1.5px;
+  background:conic-gradient(from var(--segspin),transparent 0turn,transparent .52turn,rgba(255,255,255,.06) .62turn,rgba(255,255,255,.98) .8turn,rgba(255,255,255,.06) .94turn,transparent 1turn);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  mask-composite:exclude;
+  animation:segSpin 3.2s linear infinite;
+  pointer-events:none;
+}
+@keyframes segSpin{to{--segspin:360deg}}
+.spill.idle:nth-child(2)::before{animation-delay:-.8s}
+.spill.idle:nth-child(3)::before{animation-delay:-1.6s}
+.spill.idle:nth-child(4)::before{animation-delay:-2.2s}
+.spill.idle:nth-child(5)::before{animation-delay:-.4s}
 .spill.soon{opacity:.72;border-style:dashed}
 .spill .cnt{font-size:.6rem;letter-spacing:.14em;color:var(--ink-faint)}
 .spill.on .cnt{color:rgba(18,14,4,.66)}
@@ -474,11 +507,11 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
       <div class="mhrow">
         <div>
           <h1>The Menu <span class="dari" style="font-size:.6em">منو</span></h1>
-          <p class="sub">Not one long list — the menu is served in <b style="color:var(--gold-bright)">segments</b>, meal by meal, the way the kitchen actually cooks it. Segment One is breakfast; Segment Two is the karahi wok; Segment Three is the sealed clay pots; Segment Four is the daal house; and from four in the afternoon, Segment Five takes over the charcoal.</p>
+          <p class="sub">Not one long list — the menu is served in <b style="color:var(--gold-bright)">segments</b>, meal by meal, the way the kitchen actually cooks it. Segment One is breakfast; Segment Two is the karahi wok; Segment Three is the sealed clay pots; Segment Four is the daal house; from four in the afternoon, Segment Five takes over the charcoal; and Segment Six closes the menu with the rice pots — biryani on dum and pulao under the dome.</p>
         </div>
         <div class="mh-chips">
-          <span class="chip">Segments <b>01 Breakfast · 02 Karahi · 03 Handis · 04 Veg · 05 BBQ</b></span>
-          <span class="chip"><b id="dishCount">53</b> dishes</span>
+          <span class="chip">Segments <b>01 Breakfast · 02 Karahi · 03 Handis · 04 Veg · 05 BBQ · 06 Rice</b></span>
+          <span class="chip"><b id="dishCount">60</b> dishes</span>
           <span class="chip"><b>AED</b> · priced soon</span>
         </div>
       </div>
@@ -522,7 +555,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
         </div>
         <div class="seg-meta">
           <span class="cnt" id="cnt-breakfast">18 dishes</span>
-          <span class="live" id="segLive"><i aria-hidden="true"></i> Live segment — others follow below</span>
+          <span class="live" id="segLive"><i aria-hidden="true"></i> Serving now — switch segments from the rail above</span>
         </div>
       </div>
       <p class="results-lbl" id="lbl-breakfast" aria-live="polite"></p>
@@ -538,7 +571,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
         </div>
         <div class="seg-meta">
           <span class="cnt" id="cnt-karahi">9 dishes</span>
-          <span class="live" id="segLive2"><i aria-hidden="true"></i> Live segment — others follow below</span>
+          <span class="live" id="segLive2"><i aria-hidden="true"></i> Serving now — switch segments from the rail above</span>
         </div>
       </div>
       <p class="results-lbl" id="lbl-karahi" aria-live="polite"></p>
@@ -554,7 +587,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
         </div>
         <div class="seg-meta">
           <span class="cnt" id="cnt-handis">5 dishes</span>
-          <span class="live" id="segLive3"><i aria-hidden="true"></i> Live segment — others follow below</span>
+          <span class="live" id="segLive3"><i aria-hidden="true"></i> Serving now — switch segments from the rail above</span>
         </div>
       </div>
       <p class="results-lbl" id="lbl-handis" aria-live="polite"></p>
@@ -570,7 +603,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
         </div>
         <div class="seg-meta">
           <span class="cnt" id="cnt-veg">11 dishes</span>
-          <span class="live" id="segLive4"><i aria-hidden="true"></i> Live segment — others follow below</span>
+          <span class="live" id="segLive4"><i aria-hidden="true"></i> Serving now — switch segments from the rail above</span>
         </div>
       </div>
       <p class="results-lbl" id="lbl-veg" aria-live="polite"></p>
@@ -586,28 +619,38 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
         </div>
         <div class="seg-meta">
           <span class="cnt" id="cnt-bbq">10 dishes</span>
-          <span class="live" id="segLive5"><i aria-hidden="true"></i> Live segment — others follow below</span>
+          <span class="live" id="segLive5"><i aria-hidden="true"></i> Serving now — switch segments from the rail above</span>
         </div>
       </div>
       <p class="results-lbl" id="lbl-bbq" aria-live="polite"></p>
       <div class="dish-grid" id="out-bbq"></div>
     </section>
+
+    <section class="wrap seg" id="rice" aria-labelledby="segTitle6">
+      <div class="seg-head">
+        <div class="seg-num" aria-hidden="true">06</div>
+        <div class="seg-words">
+          <h2 id="segTitle6">Rice &amp; Pulao <span class="dari">چاول</span></h2>
+          <p class="seg-note">The pot that closes the menu. Rice is sealed under a domed lid and cooked on dum until the masala drops into the grain — chicken, fish and tikka biryanis, the Afghan kabuli pulao — and the charcoal plates that ride on top: seekh, reshmi and tikka kebabs, and the house mix grill, all laid across the biryani steaming-hot.</p>
+        </div>
+        <div class="seg-meta">
+          <span class="cnt" id="cnt-rice">7 dishes</span>
+          <span class="live" id="segLive6"><i aria-hidden="true"></i> Serving now — switch segments from the rail above</span>
+        </div>
+      </div>
+      <p class="results-lbl" id="lbl-rice" aria-live="polite"></p>
+      <div class="dish-grid" id="out-rice"></div>
+    </section>
+
     <section class="wrap next" id="next" aria-labelledby="nextTitle">
       <div class="seg-head">
-        <div class="seg-num" aria-hidden="true">06+</div>
+        <div class="seg-num" aria-hidden="true">07+</div>
         <div class="seg-words">
           <h2 id="nextTitle">More on the stove</h2>
           <p class="seg-note">The next segments are written up and being priced with the family right now. One call and we'll read the whole menu to you: <a href="tel:+971558664409" style="color:var(--gold-bright)">+971 55 866 4409</a>.</p>
         </div>
       </div>
       <div class="next-grid">
-        <article class="ncard" id="rice">
-          <span class="nnum">06</span>
-          <h3>Rice & Pulao</h3>
-          <span class="dari ndari">پلو</span>
-          <span class="soon">PRICING</span>
-          <p>Domed-lid steaming until every grain stands alone. Priced in AED first.</p>
-        </article>
         <article class="ncard" id="classics">
           <span class="nnum">07</span>
           <h3>Mantu & Old Hands</h3>
@@ -724,24 +767,41 @@ const B5=[
   ['green-chilli-chicken-charcoal','Green Chilli Chicken Charcoal','گرین چلی چکن چارکول','Green chilli and coriander worked hard in the charcoal pan — sharp, glossy, the modern favourite of the segment.'],
   ['chicken-charcoal','Chicken Charcoal','چکن چارکول','The house charcoal pan: boneless chicken, garlic and a whisper of butter over live coal — nothing between you and the smoke.']
 ];
+const B6=[
+  ['chicken-biryani','Chicken Biryani','چکن بریانی','Chicken sealed under long-grain basmati and cooked on dum — the pot is only broken at the table, so the saffron steam hits you first. A drumstick buried in the rice as proof of the patience.'],
+  ['kabuli-pulao','Kabuli Pulao','کابلی پلو','The Afghan national plate: mutton on the bone under pale saffron rice, sweet carrots and black raisins folded through, almonds scattered over the top. Domed-lid steaming until every grain stands alone.'],
+  ['fish-biryani','Fish Biryani','فش بریانی','Firm white fish steaks rubbed with green chilli and folded through biryani rice — a coastal plate cooked the Lahori way. Lemon over the top so the fish sings.'],
+  ['seekh-kabab-biryani','Seekh Kabab Biryani','سیخ کباب بریانی','The grill meets the rice pot: charcoal seekh kebabs, still smoking off the stick, laid hot across dum biryani. Lemon to cut the richness.'],
+  ['reshmi-kabab-biryani','Reshmi Kabab Biryani','ریشمی کباب بریانی','Silk-fine reshmi kebabs — cream and cashew worked through the mince — set over light biryani rice. The gentlest entry on the grill-over-rice side of the kitchen.'],
+  ['mix-grill-biryani','Special Mix Grill Biryani','سپیشل مکس گرل بریانی','The whole charcoal laid on one pot: seekh, tikka and malai boti fired the same afternoon and crowned over dum biryani. Built for the table that cannot choose.'],
+  ['chicken-tikka-biryani','Chicken Tikka Biryani','چکن تکہ بریانی','Tandoor-charred tikka — yoghurt, red chilli, a real coal-kiss — folded through biryani rice with crisp fried onions. Smoke on rice, done.']
+];
 const SEGS=[
   {id:'breakfast',num:'01',name:'Breakfast',dari:'ناشتہ'},
   {id:'karahi',num:'02',name:'Karahi',dari:'کڑاہی'},
   {id:'handis',num:'03',name:'Handis',dari:'ہانڈی'},
   {id:'veg',num:'04',name:'Veg',dari:'سبزی'},
-  {id:'bbq',num:'05',name:'BBQ & Charcoal',dari:'کباب'}
+  {id:'bbq',num:'05',name:'BBQ & Charcoal',dari:'کباب'},
+  {id:'rice',num:'06',name:'Rice',dari:'چاول'}
 ];
-const MENU=[{seg:SEGS[0],items:B1},{seg:SEGS[1],items:B2},{seg:SEGS[2],items:B3},{seg:SEGS[3],items:B4},{seg:SEGS[4],items:B5}].map(function(g){
+const MENU=[{seg:SEGS[0],items:B1},{seg:SEGS[1],items:B2},{seg:SEGS[2],items:B3},{seg:SEGS[3],items:B4},{seg:SEGS[4],items:B5},{seg:SEGS[5],items:B6}].map(function(g){
   return{seg:g.seg,items:g.items.map(function(d,i){
     return{i:i,img:F+d[0]+'.jpg',name:d[1],dari:d[2],desc:d[3],price:'—',seg:g.seg};
   })};
 });
 
-/* upcoming segments (#bbq is now live as Segment 05 — these ids keep the rest of the old deep-links alive) */
+/* upcoming segments — #bbq and #rice are live now; this id keeps the old deep-link alive */
 const SOON=[
-  {id:'#rice',num:'06',name:'Rice & Pulao'},
   {id:'#classics',num:'07',name:'Mantu & Old Hands'}
 ];
+
+/* ─────────── ACTIVE SEGMENT ─────────── */
+/* only the chosen segment is rendered — tap another pill on the rail and its menu loads in fresh */
+var active='breakfast';
+(function(){
+  var h=location.hash.replace('#','');
+  if(h&&SEGS.some(function(s){return s.id===h}))active=h;
+})();
 
 /* ─────────── RENDER ─────────── */
 var qEl=document.getElementById('q');
@@ -794,29 +854,61 @@ function render(){
     var found=term?g.items.filter(function(d){
       return d.name.toLowerCase().indexOf(term)>-1||d.dari.indexOf(term)>-1||d.desc.toLowerCase().indexOf(term)>-1;
     }):g.items;
-    grid.innerHTML='';
-    found.forEach(function(d){grid.appendChild(dishCard(d))});
-    if(term&&!found.length){
-      sec.style.display='none';
-    }else{
-      sec.style.display='';
-      lbl.textContent=term?'Segment '+g.seg.num+' — '+g.seg.name+': '+found.length+(found.length===1?' match':' matches')+' for “'+term.replace(/[<>&]/g,'')+'”':'';
-      cnt.textContent=term?(found.length+(found.length===1?' dish':' dishes')+' · searching'):(g.items.length+' dishes');
-      mTotal+=found.length;
-    }
     total+=g.items.length;
+    if(term){
+      grid.innerHTML='';
+      found.forEach(function(d){grid.appendChild(dishCard(d))});
+      if(!found.length){
+        sec.style.display='none';
+      }else{
+        sec.style.display='';
+        lbl.textContent='Segment '+g.seg.num+' — '+g.seg.name+': '+found.length+(found.length===1?' match':' matches')+' for “'+term.replace(/[<>&]/g,'')+'”';
+        cnt.textContent=found.length+(found.length===1?' dish':' dishes')+' · searching';
+        mTotal+=found.length;
+      }
+    }else if(g.seg.id===active){
+      sec.style.display='';
+      lbl.textContent='';
+      cnt.textContent=g.items.length+' dishes';
+      grid.innerHTML='';
+      g.items.forEach(function(d){grid.appendChild(dishCard(d))});
+    }else{
+      sec.style.display='none';
+      grid.innerHTML='';
+    }
   });
   noMatch.hidden=!(term&&mTotal===0);
   document.getElementById('dishCount').textContent=term?mTotal:total;
+}
+
+/* switch the glowing pill — chosen one loads its segment, the rest go dark */
+function setActive(id,user){
+  active=id;
+  railRow.querySelectorAll('a.spill').forEach(function(a){
+    var on=a.getAttribute('href')==='#'+id;
+    a.classList.toggle('on',on);
+    a.classList.toggle('idle',!on);
+    a.setAttribute('aria-current',on?'true':'false');
+    if(on&&user)a.scrollIntoView({block:'nearest',inline:'center'});
+  });
+  if(user)history.replaceState(null,'','#'+id);
+  render();
+  var el=document.getElementById(id);
+  if(el&&user)el.scrollIntoView({block:'start'});
 }
 
 function buildRail(){
   SEGS.forEach(function(s){
     var g=null;
     MENU.forEach(function(m){if(m.seg===s)g=m});
+    var on=s.id===active;
     var a=document.createElement('a');
-    a.className='spill on';a.href='#'+s.id;
+    a.className='spill '+(on?'on':'idle');
+    a.href='#'+s.id;
+    a.setAttribute('aria-current',on?'true':'false');
+    a.title='Load '+s.name+(on?' — now serving':'');
     a.innerHTML='<b>'+s.num+'</b>'+s.name+'<span class="cnt">'+g.items.length+'</span>';
+    a.addEventListener('click',function(e){e.preventDefault();setActive(s.id,true)});
     railRow.appendChild(a);
   });
   SOON.forEach(function(s){
@@ -848,10 +940,10 @@ function firstSeg(term){
   return hit||SEGS[0].id;
 }
 
-/* deep-link ?seg= or #seg */
+/* deep-link to the coming-soon cards (#next / #classics) — live segment hashes load through setActive */
 (function(){
   var h=location.hash.replace('#','');
-  if(h&&['breakfast','karahi','handis','veg','next','bbq','rice','classics'].indexOf(h)>-1){
+  if(['next','classics'].indexOf(h)>-1){
     setTimeout(function(){
       var el=document.getElementById(h);
       if(el)el.scrollIntoView({block:'start'});
