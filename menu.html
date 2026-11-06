@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menu — Al Ababeel Restaurant Dubai · Breakfast · Karahi · Handis · Veg · BBQ · Rice · AED</title>
-<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Saih Shuaib 2, Dubai. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis. Segment 04 — Veg: daal tadka, mash fry, mix vegetable, chana fry, anda tikki, palak paneer, bhindi, anda chaney, daal gosht and palak gosht. Segment 05 — BBQ & Charcoal: special BBQ mutton seekh kebab, chicken seekh kebab, malai boti, tikka boti, charsi tikka, afghani tikka and the charcoal chicken pans. Segment 06 — Rice: chicken biryani, kabuli pulao, fish biryani, seekh kabab biryani, reshmi kabab biryani, special mix grill biryani and chicken tikka biryani — sealed pot rice, char-grill on top.">
+<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Jessy Shun Tong Saloon, Harmony point Shop 06 Saih Shuaib 2 - Dubai Industrial city - Dubai U.A.E. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis. Segment 04 — Veg: daal tadka, mash fry, mix vegetable, chana fry, anda tikki, palak paneer, bhindi, anda chaney, daal gosht and palak gosht. Segment 05 — BBQ & Charcoal: special BBQ mutton seekh kebab, chicken seekh kebab, malai boti, tikka boti, charsi tikka, afghani tikka and the charcoal chicken pans. Segment 06 — Rice: chicken biryani, kabuli pulao, fish biryani, seekh kabab biryani, reshmi kabab biryani, special mix grill biryani and chicken tikka biryani — sealed pot rice, char-grill on top.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta property="og:title" content="Al Ababeel Restaurant — The Full Menu, Segment by Segment">
 <meta property="og:type" content="website">
-<meta property="og:description" content="Segment 01 — Breakfast, Segment 02 — Karahi, Segment 03 — Handis, Segment 04 — Veg, Segment 05 — BBQ & Charcoal and Segment 06 — Rice: Lahori nashta, wok-cooked karahis, sealed clay pots, the daal house, the charcoal grill and the dum rice pots. Saih Shuaib 2, Dubai.">
+<meta property="og:description" content="Segment 01 — Breakfast, Segment 02 — Karahi, Segment 03 — Handis, Segment 04 — Veg, Segment 05 — BBQ & Charcoal and Segment 06 — Rice: Lahori nashta, wok-cooked karahis, sealed clay pots, the daal house, the charcoal grill and the dum rice pots. Jessy Shun Tong Saloon, Harmony point Shop 06 Saih Shuaib 2 - Dubai Industrial city - Dubai U.A.E.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&auto=format&fit=crop&q=75">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -324,7 +324,6 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
 .spill.idle:nth-child(3)::before{animation-delay:-1.6s}
 .spill.idle:nth-child(4)::before{animation-delay:-2.2s}
 .spill.idle:nth-child(5)::before{animation-delay:-.4s}
-.spill.soon{opacity:.72;border-style:dashed}
 .spill .cnt{font-size:.6rem;letter-spacing:.14em;color:var(--ink-faint)}
 .spill.on .cnt{color:rgba(18,14,4,.66)}
 
@@ -405,32 +404,6 @@ body.searching .seg-head .seg-note,body.searching .seg-meta .live{visibility:hid
 
 .empty{padding:60px 20px;text-align:center;color:var(--ink-faint)}
 .empty .dari{font-size:2rem;display:block;margin-bottom:8px}
-
-/* ============ NEXT SEGMENTS ============ */
-.next{padding-top:26px;scroll-margin-top:calc(var(--navh) + 56px)}
-.next-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-@media (max-width:1020px){.next-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:560px){.next-grid{grid-template-columns:1fr}}
-.ncard{
-  position:relative;
-  border:1px dashed rgba(233,213,163,.22);
-  border-radius:18px;
-  padding:20px 18px 18px;
-  background:var(--glass-grad),rgba(18,20,19,.35);
-  -webkit-backdrop-filter:blur(14px) saturate(1.35);
-  backdrop-filter:blur(14px) saturate(1.35);
-  transition:border-color .3s ease,transform .3s ease;
-}
-.ncard:hover{border-color:var(--line-strong);transform:translateY(-3px)}
-.ncard .nnum{font-family:var(--disp);font-size:1.5rem;color:rgba(216,178,100,.35)}
-.ncard h3{font-family:var(--disp);color:var(--ink-soft);font-size:1.02rem;font-weight:600;margin-top:6px}
-.ncard .ndari{font-size:.92rem;margin-top:2px;display:block}
-.ncard .soon{
-  display:inline-block;margin-top:14px;
-  font-size:.6rem;font-weight:700;letter-spacing:.24em;text-indent:.24em;
-  color:var(--gold);border:1px solid var(--line-strong);border-radius:99px;padding:4px 12px;
-}
-.ncard p{margin-top:10px;font-size:.78rem;color:var(--ink-faint)}
 
 /* ============ MENU FOOT ============ */
 .mfoot{
@@ -642,29 +615,10 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
       <div class="dish-grid" id="out-rice"></div>
     </section>
 
-    <section class="wrap next" id="next" aria-labelledby="nextTitle">
-      <div class="seg-head">
-        <div class="seg-num" aria-hidden="true">07+</div>
-        <div class="seg-words">
-          <h2 id="nextTitle">More on the stove</h2>
-          <p class="seg-note">The next segments are written up and being priced with the family right now. One call and we'll read the whole menu to you: <a href="tel:+971558664409" style="color:var(--gold-bright)">+971 55 866 4409</a>.</p>
-        </div>
-      </div>
-      <div class="next-grid">
-        <article class="ncard" id="classics">
-          <span class="nnum">07</span>
-          <h3>Mantu & Old Hands</h3>
-          <span class="dari ndari">منتو</span>
-          <span class="soon">SOON</span>
-          <p>Dumplings, bolani and borani — the plates that raised us — then tea and firni to close.</p>
-        </article>
-      </div>
-    </section>
-
     <div class="wrap">
       <div class="mfoot">
         <h3>Hungry yet?</h3>
-        <p>Saih Shuaib 2, Dubai · Dine-in &amp; takeaway · Established August 2026</p>
+        <p>Jessy Shun Tong Saloon, Harmony point Shop 06 Saih Shuaib 2 - Dubai Industrial city - Dubai U.A.E · Dine-in &amp; takeaway · Established August 2026</p>
         <a class="btn btn-gold" style="margin-right:10px" href="tel:+971558664409">Call +971 55 866 4409</a>
         <a class="btn btn-ghost" href="https://wa.me/971558664409" target="_blank" rel="noopener">WhatsApp Us</a>
       </div>
@@ -675,7 +629,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
         <div class="foot-grid">
           <div class="foot-brand">
             <img class="crest" src="assets/emblem-gold.svg" alt="Al Ababeel emblem">
-            <p><b style="color:var(--gold-bright)">AL ABABEEL</b> — Restaurant in Saih Shuaib 2, Dubai. Tawa and charcoal fire, family recipes, established August 2026.</p>
+            <p><b style="color:var(--gold-bright)">AL ABABEEL</b> — Restaurant in Jessy Shun Tong Saloon, Harmony point Shop 06 Saih Shuaib 2 - Dubai Industrial city - Dubai U.A.E. Tawa and charcoal fire, family recipes, established August 2026.</p>
           </div>
           <div class="foot-col">
             <h4>EXPLORE</h4>
@@ -688,11 +642,11 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
             <h4>CONTACT</h4>
             <a href="tel:+971558664409">+971 55 866 4409</a>
             <a href="https://wa.me/971558664409" target="_blank" rel="noopener">WhatsApp</a>
-            <span>V2GV+4X8, Saih Shuaib 2, Dubai, UAE</span>
+            <span>V2GV+4X8 · Jessy Shun Tong Saloon, Harmony point Shop 06 Saih Shuaib 2 - Dubai Industrial city - Dubai U.A.E</span>
           </div>
         </div>
         <div class="foot-bottom">
-          <span>© <span id="yr">2026</span> Al Ababeel Restaurant · Dubai</span>
+          <span>© <span id="yr">2026</span> Al Ababeel Restaurant · Dubai. All rights reserved. <a href="legal.html" style="color:var(--gold)">Terms &amp; Privacy</a></span>
           <span class="foot-flagline" aria-label="Black, red and green — old Afghanistan colours"><i></i><i></i><i></i></span>
         </div>
       </div>
@@ -789,11 +743,6 @@ const MENU=[{seg:SEGS[0],items:B1},{seg:SEGS[1],items:B2},{seg:SEGS[2],items:B3}
     return{i:i,img:F+d[0]+'.jpg',name:d[1],dari:d[2],desc:d[3],price:'—',seg:g.seg};
   })};
 });
-
-/* upcoming segments — #bbq and #rice are live now; this id keeps the old deep-link alive */
-const SOON=[
-  {id:'#classics',num:'07',name:'Mantu & Old Hands'}
-];
 
 /* ─────────── ACTIVE SEGMENT ─────────── */
 /* only the chosen segment is rendered — tap another pill on the rail and its menu loads in fresh */
@@ -911,12 +860,6 @@ function buildRail(){
     a.addEventListener('click',function(e){e.preventDefault();setActive(s.id,true)});
     railRow.appendChild(a);
   });
-  SOON.forEach(function(s){
-    var a=document.createElement('a');
-    a.className='spill soon';a.href=s.id;
-    a.innerHTML='<b>'+s.num+'</b>'+s.name+'<span class="cnt">SOON</span>';
-    railRow.appendChild(a);
-  });
 }
 
 buildRail();render();
@@ -939,17 +882,6 @@ function firstSeg(term){
   });
   return hit||SEGS[0].id;
 }
-
-/* deep-link to the coming-soon cards (#next / #classics) — live segment hashes load through setActive */
-(function(){
-  var h=location.hash.replace('#','');
-  if(['next','classics'].indexOf(h)>-1){
-    setTimeout(function(){
-      var el=document.getElementById(h);
-      if(el)el.scrollIntoView({block:'start'});
-    },80);
-  }
-})();
 
 /* nav */
 (function(){
