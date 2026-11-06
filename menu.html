@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Menu — Al Ababeel Restaurant Dubai · Breakfast · Karahi · Handis · Veg · BBQ · Rice · AED</title>
-<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Jessy Shun Tong Saloon, Harmony point Shop 06 Saih Shuaib 2 - Dubai Industrial city - Dubai U.A.E. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis. Segment 04 — Veg: daal tadka, mash fry, mix vegetable, chana fry, anda tikki, palak paneer, bhindi, anda chaney, daal gosht and palak gosht. Segment 05 — BBQ & Charcoal: special BBQ mutton seekh kebab, chicken seekh kebab, malai boti, tikka boti, charsi tikka, afghani tikka and the charcoal chicken pans. Segment 06 — Rice: chicken biryani, kabuli pulao, fish biryani, seekh kabab biryani, reshmi kabab biryani, special mix grill biryani and chicken tikka biryani — sealed pot rice, char-grill on top.">
+<meta name="description" content="The segmented menu of Al Ababeel Restaurant, Jessy Shun Tong Saloon, Harmony point Shop 06 Saih Shuaib 2 - Dubai Industrial city - Dubai U.A.E. Segment 01 — Breakfast: halwa puri, aloo paratha, Lahori chaney, tawa qeema, maghazi masala, beef nihari, mutton paya, chicken haleem, sweet lassi, karak and gud chai. Segment 02 — Karahi: shinwari, Lahori, white and house karahis. Segment 03 — Handis: brain masala, chicken, white, jalfrezi and Kashmiri handis. Segment 04 — Veg: daal tadka, mash fry, mix vegetable, chana fry, anda tikki, palak paneer, bhindi, anda chaney, daal gosht and palak gosht. Segment 05 — BBQ & Charcoal: special BBQ mutton seekh kebab, malai boti, tikka boti, charsi tikka, afghani tikka and the charcoal chicken pans. Segment 06 — Rice: chicken biryani, kabuli pulao, fish biryani, seekh kabab biryani, reshmi kabab biryani, special mix grill biryani and chicken tikka biryani — sealed pot rice, char-grill on top.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta property="og:title" content="Al Ababeel Restaurant — The Full Menu, Segment by Segment">
 <meta property="og:type" content="website">
@@ -394,6 +394,9 @@ h1,h2{font-family:var(--disp);color:var(--gold-bright);font-weight:600;line-heig
 }
 .price-set{color:#120e04;background:linear-gradient(135deg,#ecd9a8,#cfa858)}
 .price-tbd{color:var(--ink-faint);border:1px dashed var(--line-strong)}
+.sub-head{grid-column:1/-1;margin-top:10px;padding-top:16px;border-top:1px dashed var(--line-strong)}
+.sub-head b{display:block;font-size:.68rem;letter-spacing:.3em;text-indent:.3em;color:var(--gold);margin-bottom:6px}
+.sub-head p{margin:0;font-size:.92rem;color:var(--ink-soft);max-width:52ch}
 .hit{font-size:.58rem;font-weight:700;letter-spacing:.18em;color:var(--green);margin-left:auto;display:none}
 .searching .hit{display:inline}
 
@@ -484,7 +487,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
         </div>
         <div class="mh-chips">
           <span class="chip">Segments <b>01 Breakfast · 02 Karahi · 03 Handis · 04 Veg · 05 BBQ · 06 Rice</b></span>
-          <span class="chip"><b id="dishCount">60</b> dishes</span>
+          <span class="chip"><b id="dishCount">59</b> dishes</span>
           <span class="chip"><b>AED</b> · priced soon</span>
         </div>
       </div>
@@ -591,7 +594,7 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
           <p class="seg-note">One charcoal bed, smoked every day from four in the afternoon. Half the segment lives on the seekh and the botis — long marination, slow smoke, edges charred by hand — and half lives in the charcoal pans, where crushed pepper, green chilli and butter meet live coal. Nothing here is rushed.</p>
         </div>
         <div class="seg-meta">
-          <span class="cnt" id="cnt-bbq">10 dishes</span>
+          <span class="cnt" id="cnt-bbq">9 dishes</span>
           <span class="live" id="segLive5"><i aria-hidden="true"></i> Serving now — switch segments from the rail above</span>
         </div>
       </div>
@@ -659,76 +662,75 @@ footer::before{content:"";position:absolute;top:-1px;left:0;right:0;height:2px;b
 /* photos live locally in assets/food/ — see the credit map at the top of this file */
 const F='assets/food/';
 const B1=[
-  ['alu-paratha-set','Alu Paratha Set','آلو پراٹھا سیٹ','Two aloo parathas butter-smacked off the tawa, raita on the side and Karak chai behind them — the full Lahori morning in one plate.'],
-  ['alu-anda','Alu Anda','آلو انڈا','Eggs fried crisp at the edges, folded back into a slow potato curry the way the old city dhabas do it.'],
-  ['lahori-chaney','Lahori Chaney','لاہوری چنے','Chickpeas cooked dark and anardana-sharp, finished with julienned ginger — served with puri or paratha, your call.'],
-  ['omelette','Omelette','آملیٹ','Three eggs beaten with onion, tomato and green chilli, folded soft on the tawa. Cheese if you ask nicely.'],
-  ['fried-eggs','Fried Eggs','فرائی انڈا','A pair of sunny-side-up with frilled edges and loose yolks — built to be broken over a plain paratha.'],
-  ['tawa-qeema','Tawa Qeema','توا قیمہ','Beef mince sealed on flat iron, finished with green chilli and crushed coriander. Sear-hot and punchy.'],
-  ['tawa-maghaz-masala','Tawa Maghaz Masala','توا مغز مصالحہ','Lamb brain braised through with the morning-pounded masala — silky, unapologetic, strictly a Lahori plate.'],
-  ['alu-paratha','Alu Paratha','آلو پراٹھا','Whole-wheat flatbread stuffed with spiced potato mash, ghee-crisped on the tawa till it talks.'],
-  ['puri','Puri','پوری','Puffed wheat bread fried to order — warm, feather-light, the base of the halwa puri plate.'],
-  ['alu-bhaji','Alu Bhaji','آلو بھاجی','Potato fingers fried soft inside and crisp outside, tossed through with the house chaat masala.'],
-  ['halwa','Halwa','حلوہ','Sooji halwa beaten with ghee and sugar, set soft, finished with dry fruit. Sweetness before chai.'],
-  ['plain-paratha','Plain Paratha','سادہ پراٹھا','Flaky layered paratha, nothing hidden inside — the quiet anchor of every breakfast plate.'],
-  ['beef-nihari','Beef Nihari','بیف نہاری','Beef shank in a gravy that slept overnight, warmed slowly at dawn, finished at the table with ginger, lemon and chilli.'],
-  ['mutton-paya','Mutton Paya','مٹن پائے','Trotters run all night on a whisper of flame — the broth is the dish. Naan is not optional.'],
-  ['chicken-haleem','Chicken Haleem','چکن حلیہ','Wheat, lentils and chicken pounded together overnight, crowned with fried onion and lemon.'],
-  ['sweet-lassi','Sweet Lassi','میٹھی لسی','Churned thick from fresh curd, crowned with malai. Cold steel glass, no shortcuts.'],
-  ['karak-tea','Karak Tea','کرک چاے','Evaporated-milk chai boiled twice with cardamom — the cup that holds the whole breakfast together.'],
-  ['gud-wali-chai','Gud Wali Chai','گڑ والی چاے','Chai sweetened with jaggery instead of sugar — earth-warm, a winter favourite we pour all morning.']
+  ['alu-paratha-set','Alu Paratha Set','آلو پراٹھا سیٹ','Two aloo parathas butter-smacked off the tawa, raita on the side and Karak chai behind them — the full Lahori morning in one plate.','6'],
+  ['alu-anda','Alu Anda','آلو انڈا','Eggs fried crisp at the edges, folded back into a slow potato curry the way the old city dhabas do it.','5 / 6'],
+  ['lahori-chaney','Lahori Chaney','لاہوری چنے','Chickpeas cooked dark and anardana-sharp, finished with julienned ginger — served with puri or paratha, your call.','5 / 8'],
+  ['omelette','Omelette','آملیٹ','Three eggs beaten with onion, tomato and green chilli, folded soft on the tawa. Cheese if you ask nicely.','3 / 5'],
+  ['fried-eggs','Fried Eggs','فرائی انڈا','A pair of sunny-side-up with frilled edges and loose yolks — built to be broken over a plain paratha.','2 / 4'],
+  ['tawa-qeema','Tawa Qeema','توا قیمہ','Beef mince sealed on flat iron, finished with green chilli and crushed coriander. Sear-hot and punchy.','15'],
+  ['tawa-maghaz-masala','Tawa Maghaz Masala','توا مغز مصالحہ','Lamb brain braised through with the morning-pounded masala — silky, unapologetic, strictly a Lahori plate.','10 / 15'],
+  ['alu-paratha','Alu Paratha','آلو پراٹھا','Whole-wheat flatbread stuffed with spiced potato mash, ghee-crisped on the tawa till it talks.','3.50'],
+  ['puri','Puri','پوری','Puffed wheat bread fried to order — warm, feather-light, the base of the halwa puri plate.','15'],
+  ['alu-bhaji','Alu Bhaji','آلو بھاجی','Potato fingers fried soft inside and crisp outside, tossed through with the house chaat masala.','15'],
+  ['halwa','Halwa','حلوہ','Sooji halwa beaten with ghee and sugar, set soft, finished with dry fruit. Sweetness before chai.','15'],
+  ['plain-paratha','Plain Paratha','سادہ پراٹھا','Flaky layered paratha, nothing hidden inside — the quiet anchor of every breakfast plate.','2.00'],
+  ['beef-nihari','Beef Nihari','بیف نہاری','Beef shank in a gravy that slept overnight, warmed slowly at dawn, finished at the table with ginger, lemon and chilli.','15.00'],
+  ['mutton-paya','Mutton Paya','مٹن پائے','Trotters run all night on a whisper of flame — the broth is the dish. Naan is not optional.','14'],
+  ['chicken-haleem','Chicken Haleem','چکن حلیہ','Wheat, lentils and chicken pounded together overnight, crowned with fried onion and lemon.','9 / 13'],
+  ['sweet-lassi','Sweet Lassi','میٹھی لسی','Churned thick from fresh curd, crowned with malai. Cold steel glass, no shortcuts.','5.00'],
+  ['karak-tea','Karak Tea','کرک چاے','Evaporated-milk chai boiled twice with cardamom — the cup that holds the whole breakfast together.','1'],
+  ['gud-wali-chai','Gud Wali Chai','گڑ والی چاے','Chai sweetened with jaggery instead of sugar — earth-warm, a winter favourite we pour all morning.','2']
 ];
 const B2=[
-  ['chicken-shinwari-karahi','Chicken Shinwari Karahi','شنواری چکن کڑاہی','Salt, tomato and green chilli only — the Shinwari valley school. No garam-masala noise, ninety minutes of patience on charcoal.'],
-  ['mutton-shinwari-karahi','Mutton Shinwari Karahi','شنواری مٹن کڑاہی','Mutton on the bone steamed soft in its own marrow, built with nothing but tomato, salt and green chilli. The wok does the talking.'],
-  ['chicken-lahori-karahi','Chicken Lahori Karahi','لاہوری چکن کڑاہی','Ginger-garlic-forward masala reduced hard until the fat splits out of the tomato — the Lahori way, served loud.'],
-  ['mutton-lahori-karahi','Mutton Lahori Karahi','لاہوری مٹن کڑاہی','Old-Lahori masala over mutton on the bone, built slowly and finished with julienned ginger and a squeeze of lemon.'],
-  ['seekh-kebab-karahi','Seekh Kebab Karahi','سیخ کباب کڑاہی','Hand-rolled seekh kebabs folded into karahi gravy with green chilli — half grill, half wok, all smoke.'],
-  ['chicken-karahi','Chicken Karahi','چکن کڑاہی','The house standard: chicken folded into a slow tomato-garlic reduction, splashed with water for the steam.'],
-  ['mutton-karahi','Mutton Karahi','مٹن کڑاہی','Mutton worked through the same slow reduction until the gravy clings instead of pours.'],
-  ['chicken-white-karahi','Chicken White Karahi','سفید چکن کڑاہی','No chilli-red here: cream, white pepper and black cardamom. Gentler than the red schools, still unmistakably a karahi.'],
-  ['mutton-white-karahi','Mutton White Karahi','سفید مٹن کڑاہی','Mutton in the white school — a yoghurt-cream broth, mild enough to drink, heavy enough to end you.']
+  ['chicken-shinwari-karahi','Chicken Shinwari Karahi','شنواری چکن کڑاہی','Salt, tomato and green chilli only — the Shinwari valley school. No garam-masala noise, ninety minutes of patience on charcoal.','18 / 30 / 55'],
+  ['mutton-shinwari-karahi','Mutton Shinwari Karahi','شنواری مٹن کڑاہی','Mutton on the bone steamed soft in its own marrow, built with nothing but tomato, salt and green chilli. The wok does the talking.','26 / 50 / 95'],
+  ['chicken-lahori-karahi','Chicken Lahori Karahi','لاہوری چکن کڑاہی','Ginger-garlic-forward masala reduced hard until the fat splits out of the tomato — the Lahori way, served loud.','15 / 28 / 50'],
+  ['mutton-lahori-karahi','Mutton Lahori Karahi','لاہوری مٹن کڑاہی','Old-Lahori masala over mutton on the bone, built slowly and finished with julienned ginger and a squeeze of lemon.','20 / 40 / 78'],
+  ['seekh-kebab-karahi','Seekh Kebab Karahi','سیخ کباب کڑاہی','Hand-rolled seekh kebabs folded into karahi gravy with green chilli — half grill, half wok, all smoke.','22.00'],
+  ['chicken-karahi','Chicken Karahi','چکن کڑاہی','The house standard: chicken folded into a slow tomato-garlic reduction, splashed with water for the steam.','15 / 28 / 50'],
+  ['mutton-karahi','Mutton Karahi','مٹن کڑاہی','Mutton worked through the same slow reduction until the gravy clings instead of pours.','20 / 40 / 80'],
+  ['chicken-white-karahi','Chicken White Karahi','سفید چکن کڑاہی','No chilli-red here: cream, white pepper and black cardamom. Gentler than the red schools, still unmistakably a karahi.','20 / 37 / 55'],
+  ['mutton-white-karahi','Mutton White Karahi','سفید مٹن کڑاہی','Mutton in the white school — a yoghurt-cream broth, mild enough to drink, heavy enough to end you.','22 / 45 / 85']
 ];
 const B3=[
-  ['brain-masala-handi','Brain Masala Handi','مغز مصالحہ ہانڈی','Lamb brain set like velvet in onion-brown masala, finished with coriander and ginger julienne — strictly for those who know.'],
-  ['chicken-handi','Chicken Handi','چکن ہانڈی','Chicken sealed in the clay pot with tomato and cream, cooked on its own steam and opened at your table, served in the handi it cooked in.'],
-  ['chicken-white-handi','Chicken White Handi','سفید چکن ہانڈی','The white school in the pot — cream, white pepper and black cardamom, a mellow silky handi for the gentler table.'],
-  ['chicken-jalfrezi','Chicken Jalfrezi','چکن جلفریزی','Capsicum, onion and tomato stir-fried loud, chicken tossed back through the sizzle — the brightest pot we cook.'],
-  ['kashmiri-handi','Kashmiri Handi (With Bone)','کشمیری ہانڈی','Mutton on the bone turned slow in Kashmiri chillies — deep red, soft-spoken heat — sealed in the handi until the marrow gives.']
+  ['brain-masala-handi','Brain Masala Handi','مغز مصالحہ ہانڈی','Lamb brain set like velvet in onion-brown masala, finished with coriander and ginger julienne — strictly for those who know.','20'],
+  ['chicken-handi','Chicken Handi','چکن ہانڈی','Chicken sealed in the clay pot with tomato and cream, cooked on its own steam and opened at your table, served in the handi it cooked in.','20 / 35 / 60'],
+  ['chicken-white-handi','Chicken White Handi','سفید چکن ہانڈی','The white school in the pot — cream, white pepper and black cardamom, a mellow silky handi for the gentler table.','20'],
+  ['chicken-jalfrezi','Chicken Jalfrezi','چکن جلفریزی','Capsicum, onion and tomato stir-fried loud, chicken tossed back through the sizzle — the brightest pot we cook.','18'],
+  ['kashmiri-handi','Kashmiri Handi (With Bone)','کشمیری ہانڈی','Mutton on the bone turned slow in Kashmiri chillies — deep red, soft-spoken heat — sealed in the handi until the marrow gives.','22 / 32 / 52']
 ];
 const B4=[
-  ['daal-tadka','Daal Tadka','دال تڑکا','Yellow daal simmered soft, then ghee-soaked at the last second — cumin, garlic and red chilli cracking over the top as it falls into the bowl.'],
-  ['daal-mash-fry','Daal Mash Fry','دال ماش فرائی','Mash ki daal fried hard in the karahi — dry, glossy, onion-browned, the daal that dhabas are argued over.'],
-  ['mix-vegetable','Mix Vegetable','مخلوط سبزی','Cauliflower, potato, carrot, peas and capsicum braised in one gravy — whatever the mandi trusted that morning, chopped and cooked through.'],
-  ['daal-chana-fry','Daal Chana Fry','دال چنہ فرائی','Split chana fried with onion, tomato and whole spice until the grains go soft-separated and slow.'],
-  ['anda-tikki-masala','Anda Tikki Masala','انڈا ٹکی مصالحہ','Egg patties fried golden, folded back into a dark masala — the street-cart plate brought home to the section of the kitchen.'],
-  ['lahori-chaney','Lahori Chaney','لاہوری چنے','White chickpeas napped in a dark onion gravy — the roadside anthem of the Walled City, easy weight all day long.'],
-  ['palak-paneer','Palak Paneer','پالک پنیر','Palak cooked down until the bitter green in it is gone entirely, paneer cubes folded in right before it leaves the pot.'],
-  ['bhindi-masala','Bhindi Masala','بھنڈی مصالحہ','Okra split-slit and dry-cooked with onion and raw mango — no slime, all texture.'],
-  ['anda-chaney','Anda Chaney','انڈا چنے','Eggs folded in arms around the chana pot — double weight, one bowl, a dinner built on the cheapest things done slowly.'],
-  ['daal-gosht','Daal Gosht','دال گوشت','Daal with mutton simmered inside it until the meat gives up — lentils that eat like a full curry.'],
-  ['palak-gosht','Palak Gosht (Chicken / Mutton)','پالک گوشت','The green pot with your choice pulled from it — chicken or mutton stewed down under a heavy bed of palak.']
+  ['daal-tadka','Daal Tadka','دال تڑکا','Yellow daal simmered soft, then ghee-soaked at the last second — cumin, garlic and red chilli cracking over the top as it falls into the bowl.','12'],
+  ['daal-mash-fry','Daal Mash Fry','دال ماش فرائی','Mash ki daal fried hard in the karahi — dry, glossy, onion-browned, the daal that dhabas are argued over.','8 / 5'],
+  ['mix-vegetable','Mix Vegetable','مخلوط سبزی','Cauliflower, potato, carrot, peas and capsicum braised in one gravy — whatever the mandi trusted that morning, chopped and cooked through.','8 / 5'],
+  ['daal-chana-fry','Daal Chana Fry','دال چنہ فرائی','Split chana fried with onion, tomato and whole spice until the grains go soft-separated and slow.','8 / 5'],
+  ['anda-tikki-masala','Anda Tikki Masala','انڈا ٹکی مصالحہ','Egg patties fried golden, folded back into a dark masala — the street-cart plate brought home to the section of the kitchen.','12'],
+  ['lahori-chaney','Lahori Chaney','لاہوری چنے','White chickpeas napped in a dark onion gravy — the roadside anthem of the Walled City, easy weight all day long.','10'],
+  ['palak-paneer','Palak Paneer','پالک پنیر','Palak cooked down until the bitter green in it is gone entirely, paneer cubes folded in right before it leaves the pot.','12'],
+  ['bhindi-masala','Bhindi Masala','بھنڈی مصالحہ','Okra split-slit and dry-cooked with onion and raw mango — no slime, all texture.','8 / 5'],
+  ['anda-chaney','Anda Chaney','انڈا چنے','Eggs folded in arms around the chana pot — double weight, one bowl, a dinner built on the cheapest things done slowly.','12'],
+  ['daal-gosht','Daal Gosht','دال گوشت','Daal with mutton simmered inside it until the meat gives up — lentils that eat like a full curry.','18'],
+  ['palak-gosht','Palak Gosht (Chicken / Mutton)','پالک گوشت','The green pot with your choice pulled from it — chicken or mutton stewed down under a heavy bed of palak.','12 / 18']
 ];
 const B5=[
-  ['mutton-seekh-kebab','Special BBQ Mutton Seekh Kebab','مٹن سیخ کباب','The headliner of the grill: mutton mince seasoned the house way, rolled fat onto the wide seekh and fired over charcoal until the edges crack open. The smoke you smell from the road starts here.'],
-  ['chicken-seekh-kabab','Chicken Seekh Kebab','چکن سیخ کباب','Chicken mince hand-mixed with green chilli and coriander, rolled onto the fine seekh and fired on the same charcoal bed as the mutton headliner — lighter on the tongue, the same smoke.'],
-  ['chicken-malai-boti','Chicken Malai Boti','چکن ملائی بوٹی','Chicken cubes soaked overnight in cream, cheese and cardamom — butter-soft, mild smoke, sliding off the skewer. The gentle way into the charcoal.'],
-  ['chicken-tikka-boti','Chicken Tikka Boti','چکن ٹکہ بوٹی','Thigh-meat boti rubbed through the classic marinade — yoghurt, red chilli, garlic — and grilled to a glossy char. Lemon to squeeze, nothing to hide behind.'],
-  ['mutton-tikka-boti','Mutton Tikka Boti','مٹن ٹکہ بوٹی','Mutton cut across the grain and marinated raw in spice, grilled until the fat crackles — dark, meaty, still juicy at the centre.'],
-  ['charsi-tikka','Charsi Tikka','چارسی ٹکہ','The Peshawar street school: heavy old-school masala rubbed in by hand, no shortcuts, fired hard and finished with a squeeze of lemon.'],
-  ['afghani-tikka','Afghani Tikka','افغانی ٹکہ','Our own school of the grill — yoghurt, black pepper and dried mint over chicken, plain-spoken smoke done the way the caravan kitchens did it.'],
-  ['pepper-chicken-charcoal','Pepper Chicken Charcoal','پیپر چکن چارکول','Crushed black pepper pressed into cream-white chicken cubes, sealed dry over live coal — clean heat that keeps you eating.'],
-  ['green-chilli-chicken-charcoal','Green Chilli Chicken Charcoal','گرین چلی چکن چارکول','Green chilli and coriander worked hard in the charcoal pan — sharp, glossy, the modern favourite of the segment.'],
-  ['chicken-charcoal','Chicken Charcoal','چکن چارکول','The house charcoal pan: boneless chicken, garlic and a whisper of butter over live coal — nothing between you and the smoke.']
+  ['mutton-seekh-kebab','Special BBQ Mutton Seekh Kebab','مٹن سیخ کباب','The headliner of the grill: mutton mince seasoned the house way, rolled fat onto the wide seekh and fired over charcoal until the edges crack open. The smoke you smell from the road starts here.','25'],
+  ['chicken-malai-boti','Chicken Malai Boti','چکن ملائی بوٹی','Chicken cubes soaked overnight in cream, cheese and cardamom — butter-soft, mild smoke, sliding off the skewer. The gentle way into the charcoal.','25'],
+  ['chicken-tikka-boti','Chicken Tikka Boti','چکن ٹکہ بوٹی','Thigh-meat boti rubbed through the classic marinade — yoghurt, red chilli, garlic — and grilled to a glossy char. Lemon to squeeze, nothing to hide behind.','20'],
+  ['mutton-tikka-boti','Mutton Tikka Boti','مٹن ٹکہ بوٹی','Mutton cut across the grain and marinated raw in spice, grilled until the fat crackles — dark, meaty, still juicy at the centre.','25'],
+  ['charsi-tikka','Charsi Tikka','چارسی ٹکہ','The Peshawar street school: heavy old-school masala rubbed in by hand, no shortcuts, fired hard and finished with a squeeze of lemon.','30'],
+  ['afghani-tikka','Afghani Tikka','افغانی ٹکہ','Our own school of the grill — yoghurt, black pepper and dried mint over chicken, plain-spoken smoke done the way the caravan kitchens did it.','25'],
+  ['pepper-chicken-charcoal','Pepper Chicken Charcoal','پیپر چکن چارکول','Crushed black pepper pressed into cream-white chicken cubes, sealed dry over live coal — clean heat that keeps you eating.','42 / 27'],
+  ['green-chilli-chicken-charcoal','Green Chilli Chicken Charcoal','گرین چلی چکن چارکول','Green chilli and coriander worked hard in the charcoal pan — sharp, glossy, the modern favourite of the segment.','40 / 25'],
+  ['chicken-charcoal','Chicken Charcoal','چکن چارکول','The house charcoal pan: boneless chicken, garlic and a whisper of butter over live coal — nothing between you and the smoke.','40 / 25']
 ];
 const B6=[
-  ['chicken-biryani','Chicken Biryani','چکن بریانی','Chicken sealed under long-grain basmati and cooked on dum — the pot is only broken at the table, so the saffron steam hits you first. A drumstick buried in the rice as proof of the patience.'],
-  ['kabuli-pulao','Kabuli Pulao','کابلی پلو','The Afghan national plate: mutton on the bone under pale saffron rice, sweet carrots and black raisins folded through, almonds scattered over the top. Domed-lid steaming until every grain stands alone.'],
-  ['fish-biryani','Fish Biryani','فش بریانی','Firm white fish steaks rubbed with green chilli and folded through biryani rice — a coastal plate cooked the Lahori way. Lemon over the top so the fish sings.'],
-  ['seekh-kabab-biryani','Seekh Kabab Biryani','سیخ کباب بریانی','The grill meets the rice pot: charcoal seekh kebabs, still smoking off the stick, laid hot across dum biryani. Lemon to cut the richness.'],
-  ['reshmi-kabab-biryani','Reshmi Kabab Biryani','ریشمی کباب بریانی','Silk-fine reshmi kebabs — cream and cashew worked through the mince — set over light biryani rice. The gentlest entry on the grill-over-rice side of the kitchen.'],
-  ['mix-grill-biryani','Special Mix Grill Biryani','سپیشل مکس گرل بریانی','The whole charcoal laid on one pot: seekh, tikka and malai boti fired the same afternoon and crowned over dum biryani. Built for the table that cannot choose.'],
-  ['chicken-tikka-biryani','Chicken Tikka Biryani','چکن تکہ بریانی','Tandoor-charred tikka — yoghurt, red chilli, a real coal-kiss — folded through biryani rice with crisp fried onions. Smoke on rice, done.']
+  ['chicken-biryani','Chicken Biryani','چکن بریانی','Chicken sealed under long-grain basmati and cooked on dum — the pot is only broken at the table, so the saffron steam hits you first. A drumstick buried in the rice as proof of the patience.','12'],
+  ['kabuli-pulao','Kabuli Pulao','کابلی پلو','The Afghan national plate: mutton on the bone under pale saffron rice, sweet carrots and black raisins folded through, almonds scattered over the top. Domed-lid steaming until every grain stands alone.','15 / 13'],
+  ['fish-biryani','Fish Biryani','فش بریانی','Firm white fish steaks rubbed with green chilli and folded through biryani rice — a coastal plate cooked the Lahori way. Lemon over the top so the fish sings.','24'],
+  ['seekh-kabab-biryani','Seekh Kabab Biryani','سیخ کباب بریانی','The grill meets the rice pot: charcoal seekh kebabs, still smoking off the stick, laid hot across dum biryani. Lemon to cut the richness.','22'],
+  ['reshmi-kabab-biryani','Reshmi Kabab Biryani','ریشمی کباب بریانی','Silk-fine reshmi kebabs — cream and cashew worked through the mince — set over light biryani rice. The gentlest entry on the grill-over-rice side of the kitchen.','22'],
+  ['mix-grill-biryani','Special Mix Grill Biryani','سپیشل مکس گرل بریانی','The whole charcoal laid on one pot: seekh, tikka and malai boti fired the same afternoon and crowned over dum biryani. Built for the table that cannot choose.','28'],
+  ['chicken-tikka-biryani','Chicken Tikka Biryani','چکن تکہ بریانی','Tandoor-charred tikka — yoghurt, red chilli, a real coal-kiss — folded through biryani rice with crisp fried onions. Smoke on rice, done.','22']
 ];
 const SEGS=[
   {id:'breakfast',num:'01',name:'Breakfast',dari:'ناشتہ'},
@@ -740,9 +742,10 @@ const SEGS=[
 ];
 const MENU=[{seg:SEGS[0],items:B1},{seg:SEGS[1],items:B2},{seg:SEGS[2],items:B3},{seg:SEGS[3],items:B4},{seg:SEGS[4],items:B5},{seg:SEGS[5],items:B6}].map(function(g){
   return{seg:g.seg,items:g.items.map(function(d,i){
-    return{i:i,img:F+d[0]+'.jpg',name:d[1],dari:d[2],desc:d[3],price:'—',seg:g.seg};
+    return{i:i,img:F+d[0]+'.jpg',name:d[1],dari:d[2],desc:d[3],price:d[4]||'—',seg:g.seg};
   })};
 });
+MENU[5].items[5].head={k:'Special Signature Biryanis',p:'These are the rice pots that carry our signature — dum biryani crowned with live charcoal. The Special Mix Grill lays the whole charcoal of the day over one pot, while the Chicken Tikka Biryani folds tandoor-charred tikka straight into the rice with crisp fried onions.'};
 
 /* ─────────── ACTIVE SEGMENT ─────────── */
 /* only the chosen segment is rendered — tap another pill on the rail and its menu loads in fresh */
@@ -789,6 +792,17 @@ function dishCard(item){
   return card;
 }
 
+function addDish(grid,d){
+  if(d.head)grid.appendChild(subHead(d.head));
+  grid.appendChild(dishCard(d));
+}
+
+function subHead(h){
+  var w=document.createElement('div');w.className='sub-head';
+  w.innerHTML='<b>'+h.k+'</b><p>'+h.p+'</p>';
+  return w;
+}
+
 function render(){
   var term=qEl.value.trim().toLowerCase();
   var body=document.body;
@@ -806,7 +820,7 @@ function render(){
     total+=g.items.length;
     if(term){
       grid.innerHTML='';
-      found.forEach(function(d){grid.appendChild(dishCard(d))});
+      found.forEach(function(d){addDish(grid,d)});
       if(!found.length){
         sec.style.display='none';
       }else{
@@ -820,7 +834,7 @@ function render(){
       lbl.textContent='';
       cnt.textContent=g.items.length+' dishes';
       grid.innerHTML='';
-      g.items.forEach(function(d){grid.appendChild(dishCard(d))});
+      g.items.forEach(function(d){addDish(grid,d)});
     }else{
       sec.style.display='none';
       grid.innerHTML='';
